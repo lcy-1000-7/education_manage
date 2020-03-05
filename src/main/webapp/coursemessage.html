@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>layout 后台大布局 - Layui</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" >
+  <link rel="stylesheet" href="./layui/css/layui.css">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="layui-layout-body">
+<div class="layui-layout layui-layout-admin" >
+  <div class="layui-header"style="background-color: gainsboro;">
+    <div class="layui-logo" style="background-color: #000000;">首页</div>
+  </div>
+  
+  <div class="layui-side layui-bg-black">
+    <div class="layui-side-scroll">
+      <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+  <ul class="layui-nav layui-nav-tree" lay-filter="test">
+  <!-- 侧边导航: <ul class="layui-nav layui-nav-tree layui-nav-side"> -->
+    <li class="layui-nav-item layui-nav-itemed" >
+      <a href="javascript:;">学员管理</a>
+      <dl class="layui-nav-child">
+		<dd><a href="javascript:;">学员信息</a></dd>
+        <dd><a href="javascript:;">新增学员</a></dd>
+
+      </dl>
+    </li>
+	<li class="layui-nav-item layui-nav-itemed" >
+	  <a href="javascript:;">班级管理</a>
+	  <dl class="layui-nav-child">
+		  <dd><a href="javascript:;">班级信息</a></dd>
+	    <dd><a href="javascript:;">新增班级</a></dd>
+
+	  </dl>
+	</li>
+	<li class="layui-nav-item layui-nav-itemed" >
+	  <a href="javascript:;">教师管理</a>
+	  <dl class="layui-nav-child">
+		  <dd><a href="javascript:;">教师信息</a></dd>
+	    <dd><a href="javascript:;">新增教师</a></dd>
+
+	  </dl>
+	</li>
+	<li class="layui-nav-item layui-nav-itemed" >
+		  <a href="javascript:;">课程管理</a>
+		  <dl class="layui-nav-child">
+			  <dd><a href="javascript:;">课程信息</a></dd>
+		    <dd><a href="javascript:;">新增课程</a></dd>
+		
+		  </dl>
+		</li>
+	<li class="layui-nav-item"><a href="">财务管理</a></li>
+    <li class="layui-nav-item"><a href="">修改密码</a></li>
+    <li class="layui-nav-item"><a href="">退出</a></li>
+  </ul>
+    </div>
+  </div>
+  
+  <div class="layui-body">
+    <div class="layui-row">
+                    <div class="layui-col-lg7" style="margin-top: 10px;margin-left: 20px;">
+						<a href="article_add.html" class="layui-btn">添加课程</a>						
+                    </div>
+    
+                    <div  class="layui-col-lg4" style="text-align: right" >
+    
+                        <div class="layui-input-inline" style="width: 300px;margin-top: 10px;">
+                            <input type="text" name="k" value="" placeholder="手机/用户名/邮箱/昵称" class="layui-input key">
+                        </div>
+                        <button type="button" class="layui-btn sou" style="margin-top: 10px;">搜索</button>
+                    </div>
+                </div>
+    
+                <table class="layui-table layui-form">
+    
+                    <thead>
+                    <tr>
+                        <th>课程编号</th>
+                        <th>课程名称</th>
+                        <th>课程简介</th>
+                        <th>开课时间</th>
+                        <th>结课时间</th>
+                        <th>操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="id36567">
+                        <td>36567</td>
+                        <td>15912345678</td>
+                        <td>YY187919</td>
+                        <td></td>
+                        <td></td>
+                       <td><a class="btn btn-default btn-sm" href="update.html">修改</a>&nbsp;&nbsp;&nbsp;<a class="btn btn-default btn-sm" href="">删除</a></td>
+                    </tr>
+        
+                    </tbody>
+                </table>
+				 <div class="page">
+					 <ul class="pagination">
+						 <li class="disabled"><span>&laquo;</span></li>
+						  <li class="active"><span>1</span></li>
+						  <li><a href="">2</a></li>
+						  <li><a href="">3</a></li>
+						  <li><a href="">4</a></li>
+						  <li><a href="">5</a></li>
+						  <li><a href="">6</a></li>
+						  <li><a href="">7</a></li>
+						  <li><a href="">8</a></li>
+						  <li class="disabled"><span>...</span></li>
+						  <li><a href="">109</a></li>
+						  <li><a href="">110</a></li>
+						  <li><a href="">&raquo;</a></li>
+					</ul>
+				</div>
+
+  </div>
+  
+  
+</div>
+<script src="./layui/layui.js"></script>
+<script src="css/jquery-3.3.1.min.js"></script>
+<script>
+//JavaScript代码区域
+layui.use('element', function(){
+  var element = layui.element;
+  
+});
+</script>
+</body>
+</html>
+      
