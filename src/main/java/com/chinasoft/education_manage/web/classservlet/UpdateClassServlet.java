@@ -32,7 +32,7 @@ public class UpdateClassServlet extends HttpServlet {
         ClassService classService = new ClassServiceImpl();
         classService.updateClass(aclass);
 
-        response.sendRedirect(request.getContextPath() + "findClassServlet?currentPage=1&rows=3");
+        response.sendRedirect(request.getContextPath() + "/findClassServlet?currentPage=1&rows=3");
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
