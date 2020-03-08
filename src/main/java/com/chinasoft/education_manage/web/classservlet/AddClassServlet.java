@@ -1,4 +1,4 @@
-package com.chinasoft.education_manage.web;
+package com.chinasoft.education_manage.web.classservlet;
 
 import com.chinasoft.education_manage.domain.Class;
 import com.chinasoft.education_manage.service.ClassService;

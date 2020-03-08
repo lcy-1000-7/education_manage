@@ -149,7 +149,7 @@
                 </c:if>
                 <c:if test="${studentpage.pageNum != studentpage.totalPage}">
                     <li>
-                        <a href="${pageContext.request.contextPath}/studentMessageServlet?pageNum=${page.pageNum+1}&rows=5&selectmessage=${selectmessage}"
+                        <a href="${pageContext.request.contextPath}/studentMessageServlet?pageNum=${studentpage.pageNum+1}&rows=5&selectmessage=${selectmessage}"
                            aria-label="Previous"><span aria-hidden="true">&raquo;</span></a>
                     </li>
                 </c:if>
