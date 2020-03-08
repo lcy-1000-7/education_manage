@@ -16,8 +16,7 @@ public class DeleteClassServlet extends HttpServlet {
         String ccid = request.getParameter("ccid");
         ClassService classService = new ClassServiceImpl();
         classService.deleteClass(ccid);
-
-        response.sendRedirect(request.getContextPath() + "findClassServlet?currentPage=1&rows=3");
+        response.sendRedirect(request.getContextPath() + "/findClassServlet?currentPage=1&rows=3");
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

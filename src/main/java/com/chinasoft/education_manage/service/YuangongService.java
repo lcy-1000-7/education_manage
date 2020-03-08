@@ -5,7 +5,7 @@ import com.chinasoft.education_manage.domain.Yuangong;
 public interface YuangongService {
     Yuangong findYuangongByNameAndPassword(Yuangong yuangong);
 
-    Yuangong findPasswordBysno(int sno);
+    Yuangong findPasswordBysno(String sno);
 
     void updatePasswordById(Yuangong yuangong);
 

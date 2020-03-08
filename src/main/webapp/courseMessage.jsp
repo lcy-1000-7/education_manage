@@ -1,11 +1,18 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: ZLM
+  Date: 2020/3/8
+  Time: 14:58
+  To change this template use File | Settings | File Templates.
+--%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"  %>
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>班级信息</title>
+    <title>课程信息</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" >
     <link rel="stylesheet" href="./layui/css/layui.css">
     <link rel="stylesheet" href="css/style.css" />
@@ -63,46 +70,45 @@
     <div class="layui-body">
         <div class="layui-row">
             <div class="layui-col-lg7" style="margin-top: 10px;margin-left: 20px;">
-                <a href="${pageContext.request.contextPath}/addClass.jsp?currentPage=1&rows=3" class="layui-btn">新增班级</a>
+                <a href="${pageContext.request.contextPath}/addCourse.jsp?currentPage=1&rows=3" class="layui-btn">添加课程</a>
             </div>
-
-            <form action="${pageContext.request.contextPath}/findClassServlet?currentPage=1&rows=3" method="post">
+            <form action="${pageContext.request.contextPath}/findCourseServlet" method="post">
                 <div  class="layui-col-lg4" style="text-align: right" >
+
                     <div class="layui-input-inline" style="width: 300px;margin-top: 10px;">
-                        <input type="text" name="cname" value="${search.cname[0]}" placeholder="班级名称" class="layui-input key">
-<%--                        <input type="text" name="tname" value="${search.tname}" placeholder="教师姓名" class="layui-input key">--%>
-<%--                        <input type="text" name="ccname" value="${search.ccname}" placeholder="课程名称" class="layui-input key">--%>
+                        <input type="text" name="k" value="   " placeholder="手机/用户名/邮箱/昵称" class="layui-input key">
                     </div>
-                    <button type="submit" class="layui-btn sou" style="margin-top: 10px;">搜索</button>
+                    <button type="button" class="layui-btn sou" style="margin-top: 10px;">搜索</button>
                 </div>
             </form>
 
         </div>
-
-        <form action="${pageContext.request.contextPath}/deleteClassServlet" method="post" id="form">
+        <form action="${pageContext.request.contextPath}/deleteCourseServlet" method="post">
             <table class="layui-table layui-form">
                 <thead>
                 <tr>
-                    <th>班级编号</th>
-                    <th>班级名称</th>
-                    <th>教师姓名</th>
+                    <th>课程编号</th>
                     <th>课程名称</th>
+                    <th>课程简介</th>
+                    <th>开课时间</th>
+                    <th>结课时间</th>
                     <th>操作</th>
                 </tr>
                 </thead>
-                <c:forEach items="${page.list}" var="aclass">
+                <c:forEach items="${page.list}" var="course">
                     <tbody>
                     <tr>
-                        <td>${aclass.ccid}</td>
-                        <td>${aclass.cname}</td>
-                        <td>${aclass.tname}</td>
-                        <td>${aclass.ccname}</td>
+                        <td>${course.cno}</td>
+                        <td>${course.cname}</td>
+                        <td>${course.introduce}</td>
+                        <td>${course.stime}</td>
+                        <td>${course.etime}</td>
                         <td>
-                            <a class="btn btn-default btn-sm" href="${pageContext.request.contextPath}/findClassByccidServlet?ccid=${aclass.ccid}&currentPage=1&rows=3">修改</a>&nbsp;&nbsp;&nbsp;
-<%--                            <a class="btn btn-default btn-sm" href="${pageContext.request.contextPath}/deleteClassServlet?ccid=${aclass.ccid}">删除</a>--%>
-                            <a class="btn btn-default btn-sm" href="javascript:void (0)" onclick="showDeleteModal(${aclass.ccid})">删除</a>
+                            <a class="btn btn-default btn-sm" href="${pageContext.request.contextPath}/FindCourseBycnoServlet?cno=${course.cno}&currentPage=1&rows=3">修改</a>&nbsp;&nbsp;&nbsp;
+                            <a class="btn btn-default btn-sm" href="javascript:void (0)" onclick="showDeleteModal(${course.cno})">删除</a>
                         </td>
                     </tr>
+
                     </tbody>
                 </c:forEach>
             </table>
@@ -149,7 +155,7 @@
 
     </div>
 
-    <!-- 模态框（Modal） -->
+<!-- 模态框（Modal） -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -185,18 +191,17 @@
     //JavaScript代码区域
     layui.use('element', function(){
         var element = layui.element;
-    });
 
+    });
     function showDeleteModal(obj) {
         $("#uid").val(obj);
         $("#myModal").modal({
-            backdrop : 'static',
-            keyboard : false
+                            backdrop : 'static',
+                            keyboard : false
         });
     }
-
     $(function() {
-        // 删除模态框的确定按钮的点击事件
+// 删除模态框的确定按钮的点击事件
         $("#deleteUserBtn").click(function() {
             location.href="${pageContext.request.contextPath}/deleteClassServlet?ccid="+$("#uid").val()
         });
@@ -204,4 +209,3 @@
 </script>
 </body>
 </html>
-

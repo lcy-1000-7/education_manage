@@ -6,47 +6,74 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ce63962-1290-4aa1-a806-24a7c573d12a" name="Default Changelist" comment="班级整合">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/dao/YuangongDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/dao/impl/YuangongDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/domain/Yuangong.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/filter/LoginFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/filter/SensitiveWordsFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/service/YuangongService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/service/impl/YuangongServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/utils/CommonUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/web/loginservlet/FindPasswordServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/web/loginservlet/FindYuangongServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/web/loginservlet/LoginServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/web/loginservlet/UpdatePasswordServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/web/loginservlet/VerifyCodeServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/password.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/chinasoft/student/ClassTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="8ce63962-1290-4aa1-a806-24a7c573d12a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/dao/CourseDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/dao/TeacherDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/dao/impl/CourseDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/dao/impl/TeacherDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/domain/Course.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/domain/CoursePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/domain/Teacher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/service/CourseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/service/TeacherService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/service/impl/CourseServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/service/impl/TeacherServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/utils/TeacherUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/web/courseservlet/AddCourseServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/web/courseservlet/DeleteCourseServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/web/courseservlet/FindCourseBycnoServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/web/courseservlet/FindCourseServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/web/courseservlet/UpdateCourseServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/web/teacherservlet/AddTeacherServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/web/teacherservlet/DelteTeacherServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/web/teacherservlet/FindTeacherByTnoServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/web/teacherservlet/TeacherMessageServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/web/teacherservlet/UpdateTeaherServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/addCourse.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/addteacher.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/courseMessage.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/teachermessage.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/updateCourse.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/updateteacher.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/chinasoft/student/CourseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/chinasoft/student/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/web/classservlet/UpdateClassServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/web/classservlet/UpdateClassServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/dao/YuangongDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/dao/YuangongDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/dao/impl/YuangongDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/dao/impl/YuangongDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/service/YuangongService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/service/YuangongService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/service/impl/YuangongServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/service/impl/YuangongServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/web/classservlet/DeleteClassServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/web/classservlet/DeleteClassServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/web/loginservlet/FindPasswordServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/web/loginservlet/FindPasswordServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/addClass.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/addClass.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/addclass.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/addcourse.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/addstudent.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/addstudent.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/addstudent.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/addteacher.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/classmessage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/classmessage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/classmessage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/coursemessage.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chinasoft/education_manage/dao/StudentDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chinasoft/education_manage/dao/StudentDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chinasoft/education_manage/dao/impl/StudentDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chinasoft/education_manage/dao/impl/StudentDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chinasoft/education_manage/domain/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chinasoft/education_manage/domain/Student.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chinasoft/education_manage/domain/StudentPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chinasoft/education_manage/domain/StudentPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chinasoft/education_manage/service/StudentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chinasoft/education_manage/service/StudentService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chinasoft/education_manage/service/impl/StudentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chinasoft/education_manage/service/impl/StudentServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chinasoft/education_manage/utils/JDBCUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chinasoft/education_manage/utils/JDBCUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chinasoft/education_manage/utils/JedisPoolUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chinasoft/education_manage/utils/JedisPoolUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chinasoft/education_manage/utils/StudentUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chinasoft/education_manage/utils/StudentUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/education_manage-1.0-SNAPSHOT/WEB-INF/classes/com/chinasoft/education_manage/dao/StudentDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/education_manage-1.0-SNAPSHOT/WEB-INF/classes/com/chinasoft/education_manage/dao/StudentDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/education_manage-1.0-SNAPSHOT/WEB-INF/classes/com/chinasoft/education_manage/dao/impl/StudentDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/education_manage-1.0-SNAPSHOT/WEB-INF/classes/com/chinasoft/education_manage/dao/impl/StudentDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/education_manage-1.0-SNAPSHOT/WEB-INF/classes/com/chinasoft/education_manage/domain/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/education_manage-1.0-SNAPSHOT/WEB-INF/classes/com/chinasoft/education_manage/domain/Student.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/education_manage-1.0-SNAPSHOT/WEB-INF/classes/com/chinasoft/education_manage/domain/StudentPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/education_manage-1.0-SNAPSHOT/WEB-INF/classes/com/chinasoft/education_manage/domain/StudentPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/education_manage-1.0-SNAPSHOT/WEB-INF/classes/com/chinasoft/education_manage/service/StudentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/education_manage-1.0-SNAPSHOT/WEB-INF/classes/com/chinasoft/education_manage/service/StudentService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/education_manage-1.0-SNAPSHOT/WEB-INF/classes/com/chinasoft/education_manage/service/impl/StudentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/education_manage-1.0-SNAPSHOT/WEB-INF/classes/com/chinasoft/education_manage/service/impl/StudentServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/education_manage-1.0-SNAPSHOT/WEB-INF/classes/com/chinasoft/education_manage/utils/JDBCUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/education_manage-1.0-SNAPSHOT/WEB-INF/classes/com/chinasoft/education_manage/utils/JDBCUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/education_manage-1.0-SNAPSHOT/WEB-INF/classes/com/chinasoft/education_manage/utils/JedisPoolUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/education_manage-1.0-SNAPSHOT/WEB-INF/classes/com/chinasoft/education_manage/utils/JedisPoolUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/education_manage-1.0-SNAPSHOT/WEB-INF/classes/com/chinasoft/education_manage/utils/StudentUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/education_manage-1.0-SNAPSHOT/WEB-INF/classes/com/chinasoft/education_manage/utils/StudentUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/education_manage-1.0-SNAPSHOT/studentmessage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/education_manage-1.0-SNAPSHOT/studentmessage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/chinasoft/student/StudentTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/chinasoft/student/StudentTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/password.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/password.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/password.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/studentmessage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/studentmessage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/studentmessage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/teachermessage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/updateClass.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/updateClass.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/updatestudent.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/updatestudent.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/chinasoft/student/ClassTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/chinasoft/student/ClassTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/education_manage-1.0-SNAPSHOT/addclass.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/education_manage-1.0-SNAPSHOT/addcourse.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/education_manage-1.0-SNAPSHOT/addstudent.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/education_manage-1.0-SNAPSHOT/addteacher.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/education_manage-1.0-SNAPSHOT/classmessage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/education_manage-1.0-SNAPSHOT/coursemessage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/education_manage-1.0-SNAPSHOT/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/education_manage-1.0-SNAPSHOT/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/education_manage-1.0-SNAPSHOT/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/education_manage-1.0-SNAPSHOT/password.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/education_manage-1.0-SNAPSHOT/studentmessage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/education_manage-1.0-SNAPSHOT/teachermessage.html" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -62,77 +89,82 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/filter/LoginFilter.java">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+            <state relative-caret-position="222">
+              <caret line="20" column="109" selection-start-line="20" selection-start-column="109" selection-end-line="20" selection-end-column="109" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/web/classservlet/UpdateClassServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="34" column="59" selection-start-line="34" selection-start-column="59" selection-end-line="34" selection-end-column="59" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/web/classservlet/DeleteClassServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="17" column="24" lean-forward="true" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/service/ClassService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/service/impl/ClassServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
-              <folding>
-                <element signature="e#1113#1114#0" expanded="true" />
-                <element signature="e#1155#1156#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/dao/ClassDao.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/web/loginservlet/LoginServlet.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="242">
-              <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+              <caret line="39" column="77" lean-forward="true" selection-start-line="39" selection-start-column="77" selection-end-line="39" selection-end-column="77" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/dao/impl/ClassDaoImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/studentmessage.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="66" column="39" lean-forward="true" selection-start-line="66" selection-start-column="39" selection-end-line="66" selection-end-column="39" />
+            <state relative-caret-position="552">
+              <caret line="67" column="10" selection-start-line="67" selection-start-column="10" selection-end-line="67" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/chinasoft/student/StudentTest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/teachermessage.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="35" column="9" lean-forward="true" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+            <state relative-caret-position="376">
+              <caret line="74" column="10" selection-start-line="74" selection-start-column="10" selection-end-line="74" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/updateClass.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="486">
+              <caret line="68" column="10" selection-start-line="68" selection-start-column="10" selection-end-line="68" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/updateCourse.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="398">
+              <caret line="66" column="10" selection-start-line="66" selection-start-column="10" selection-end-line="66" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/updatestudent.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="530">
+              <caret line="60" column="10" selection-start-line="60" selection-start-column="10" selection-end-line="60" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/updateteacher.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1398">
+              <caret line="67" column="10" selection-start-line="67" selection-start-column="10" selection-end-line="67" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/filter/LoginFilter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="440">
+              <caret line="38" column="79" lean-forward="true" selection-start-line="38" selection-start-column="79" selection-end-line="38" selection-end-column="79" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -141,22 +173,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/chinasoft/student/ClassTest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/web/loginservlet/FindPasswordServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/dao/impl/StudentDaoImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="87" column="37" lean-forward="true" selection-start-line="87" selection-start-column="37" selection-end-line="87" selection-end-column="37" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="286">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
             </state>
           </provider>
         </entry>
@@ -172,20 +192,17 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>uid</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/static/admin/js/script.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/static/admin/js/config.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/article_add.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/base.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/article_index.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/db_backup.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/db_reduction.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/type_index.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/data/menu.json" />
         <option value="$PROJECT_DIR$/src/main/resourses/druid.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/utils/StudentUtils.java" />
@@ -193,9 +210,7 @@
         <option value="$PROJECT_DIR$/src/test/java/com/chinasoft/StudentTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/domain/Student.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/update.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/addstudent.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/web/ToUpdateServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/updatestudent.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/web/echoStudentServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/web/UpdateStudentServlet.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/chinasoft/student/StudentTest.java" />
@@ -209,11 +224,36 @@
         <option value="$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/web/AddStudentServlet.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/web/studentservlet/EchoStudentServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/studentmessage.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/web/loginservlet/LoginServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/web/classservlet/UpdateClassServlet.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/chinasoft/student/ClassTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/dao/impl/YuangongDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/web/classservlet/DeleteClassServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/utils/TeacherUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/web/teacherservlet/AddTeacherServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/service/impl/TeacherServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/web/teacherservlet/UpdateTeaherServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/service/impl/CourseServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/chinasoft/student/Test.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/domain/CoursePage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/chinasoft/student/CourseTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/dao/impl/CourseDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/addClass.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/addCourse.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/addstudent.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/addteacher.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/classmessage.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/courseMessage.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/password.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/studentmessage.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/teachermessage.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/updateClass.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/updateCourse.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/updatestudent.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/updateteacher.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/filter/LoginFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/web/loginservlet/FindPasswordServlet.java" />
       </list>
     </option>
   </component>
@@ -243,7 +283,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -305,40 +345,6 @@
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="chinasoft" type="462c0819:PsiDirectoryNode" />
               <item name="education_manage" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="education_manage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="education_manage" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="chinasoft" type="462c0819:PsiDirectoryNode" />
-              <item name="education_manage" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="education_manage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="education_manage" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="chinasoft" type="462c0819:PsiDirectoryNode" />
-              <item name="education_manage" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="education_manage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="education_manage" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="chinasoft" type="462c0819:PsiDirectoryNode" />
-              <item name="education_manage" type="462c0819:PsiDirectoryNode" />
               <item name="filter" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -350,53 +356,7 @@
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="chinasoft" type="462c0819:PsiDirectoryNode" />
               <item name="education_manage" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="education_manage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="education_manage" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="chinasoft" type="462c0819:PsiDirectoryNode" />
-              <item name="education_manage" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="education_manage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="education_manage" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="chinasoft" type="462c0819:PsiDirectoryNode" />
-              <item name="education_manage" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="education_manage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="education_manage" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="chinasoft" type="462c0819:PsiDirectoryNode" />
-              <item name="education_manage" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="education_manage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="education_manage" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="chinasoft" type="462c0819:PsiDirectoryNode" />
-              <item name="education_manage" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="classservlet" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="education_manage" type="b2602c69:ProjectViewProjectNode" />
@@ -417,51 +377,11 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="education_manage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="education_manage" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="education_manage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="education_manage" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="education_manage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="education_manage" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="education_manage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="education_manage" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="chinasoft" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="education_manage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="education_manage" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="chinasoft" type="462c0819:PsiDirectoryNode" />
-              <item name="student" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -469,7 +389,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/com/chinasoft/student" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -479,11 +399,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\education_manage\src\main\webapp" />
-      <recent name="F:\education_manage\src\main\java\com\chinasoft\education_manage\utils" />
+      <recent name="F:\education_manage\src\test\java\com\chinasoft\student" />
+      <recent name="F:\education_manage\src\main\java\com\chinasoft\education_manage\web\teacherservlet" />
       <recent name="F:\education_manage\src\main\java\com\chinasoft\education_manage\service\impl" />
       <recent name="F:\education_manage\src\main\java\com\chinasoft\education_manage\service" />
-      <recent name="F:\education_manage\src\main\java\com\chinasoft\education_manage\filter" />
+      <recent name="F:\education_manage\src\main\java\com\chinasoft\education_manage\domain" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -498,7 +418,39 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.education_manage">
+  <component name="RunManager" selected="JUnit.CourseTest.findCourse">
+    <configuration name="ClassTest.deleteClass" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="education_manage" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.chinasoft.student.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.chinasoft.student" />
+      <option name="MAIN_CLASS_NAME" value="com.chinasoft.student.ClassTest" />
+      <option name="METHOD_NAME" value="deleteClass" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CourseTest.findCourse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="education_manage" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.chinasoft.student.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.chinasoft.student" />
+      <option name="MAIN_CLASS_NAME" value="com.chinasoft.student.CourseTest" />
+      <option name="METHOD_NAME" value="findCourse" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="StudentTest.add" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="education_manage" />
       <extension name="coverage">
@@ -526,38 +478,6 @@
       <option name="PACKAGE_NAME" value="com.chinasoft.student" />
       <option name="MAIN_CLASS_NAME" value="com.chinasoft.student.StudentTest" />
       <option name="METHOD_NAME" value="findTotal" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StudentTest.insertStudent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="education_manage" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.chinasoft.student.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.chinasoft.student" />
-      <option name="MAIN_CLASS_NAME" value="com.chinasoft.student.StudentTest" />
-      <option name="METHOD_NAME" value="insertStudent" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StudentTest.update" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="education_manage" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.chinasoft.student.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.chinasoft.student" />
-      <option name="MAIN_CLASS_NAME" value="com.chinasoft.student.StudentTest" />
-      <option name="METHOD_NAME" value="update" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -653,11 +573,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CourseTest.findCourse" />
+        <item itemvalue="JUnit.ClassTest.deleteClass" />
         <item itemvalue="JUnit.StudentTest.findTotal" />
         <item itemvalue="JUnit.StudentTest.add" />
         <item itemvalue="JUnit.StudentTest.updateStudent" />
-        <item itemvalue="JUnit.StudentTest.insertStudent" />
-        <item itemvalue="JUnit.StudentTest.update" />
       </list>
     </recent_temporary>
   </component>
@@ -680,7 +600,8 @@
       <workItem from="1583557961560" duration="22160000" />
       <workItem from="1583639937719" duration="4731000" />
       <workItem from="1583663778768" duration="263000" />
-      <workItem from="1583664069122" duration="2717000" />
+      <workItem from="1583664069122" duration="9102000" />
+      <workItem from="1583673703767" duration="3579000" />
     </task>
     <task id="LOCAL-00001" summary="lcy">
       <created>1583642184682</created>
@@ -696,19 +617,17 @@
       <option name="project" value="LOCAL" />
       <updated>1583643446277</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="班级整合">
+      <created>1583666884081</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1583666884081</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="StudentTest_add - 2020.03.07 at 17h 21m 02s.xml">
-      <configuration name="StudentTest.add" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StudentTest_findTotal - 2020.03.07 at 17h 27m 26s.xml">
-      <configuration name="StudentTest.findTotal" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StudentTest_findTotal - 2020.03.07 at 17h 28m 17s.xml">
-      <configuration name="StudentTest.findTotal" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="StudentTest_findTotal - 2020.03.07 at 17h 29m 34s.xml">
       <configuration name="StudentTest.findTotal" configurationId="JUnit" />
     </history-entry>
@@ -730,9 +649,18 @@
     <history-entry file="StudentTest_findTotal - 2020.03.07 at 17h 40m 20s.xml">
       <configuration name="StudentTest.findTotal" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ClassTest_deleteClass - 2020.03.08 at 19h 32m 27s.xml">
+      <configuration name="ClassTest.deleteClass" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CourseTest_findCourse - 2020.03.08 at 21h 51m 22s.xml">
+      <configuration name="CourseTest.findCourse" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CourseTest_findCourse - 2020.03.08 at 22h 02m 27s.xml">
+      <configuration name="CourseTest.findCourse" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64907000" />
+    <option name="totallyTimeSpent" value="74871000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -747,7 +675,7 @@
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49607536" visible="true" weight="0.2531983" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49607536" visible="true" weight="0.25586355" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -791,300 +719,64 @@
     <option name="LAST_COMMIT_MESSAGE" value="班级整合" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/utils/JDBCUtils.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/chinasoft/student/StudentTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-21">
-          <caret line="35" column="38" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resourses/druid.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/addclass.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="94" column="47" selection-start-line="94" selection-start-column="47" selection-end-line="94" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/web/Servlet.java" />
-    <entry file="file://$PROJECT_DIR$/target/classes/com/lcy/App.class" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/addstudent.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1320">
-          <caret line="60" column="26" lean-forward="true" selection-start-line="60" selection-start-column="26" selection-end-line="60" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/login.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-263">
-          <caret line="13" column="13" lean-forward="true" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/utils/StudentUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="23" lean-forward="true" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+        <state relative-caret-position="378">
+          <caret line="35" column="9" lean-forward="true" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/login.html">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/chinasoft/student/ClassTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="30" column="7" lean-forward="true" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/chinasoft/StudentTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/domain/Student.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-252">
-          <caret line="54" column="31" selection-start-line="54" selection-start-column="31" selection-end-line="54" selection-end-column="31" />
-          <folding>
-            <element signature="e#1077#1078#0" expanded="true" />
-            <element signature="e#1109#1110#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/addstudent.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="98" column="106" selection-start-line="98" selection-start-column="106" selection-end-line="98" selection-end-column="106" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/studentmessage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="880">
-          <caret line="40" column="12" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/updatestudent.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="67" column="53" lean-forward="true" selection-start-line="67" selection-start-column="53" selection-end-line="67" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/domain/StudentPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-          <folding>
-            <element signature="e#569#570#0" expanded="true" />
-            <element signature="e#602#603#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/service/StudentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/service/impl/StudentServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="726">
-          <caret line="46" column="36" selection-start-line="46" selection-start-column="36" selection-end-line="46" selection-end-column="36" />
+        <state relative-caret-position="198">
+          <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#326#327#0" expanded="true" />
+            <element signature="e#361#362#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/dao/StudentDao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/service/YuangongService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+        <state relative-caret-position="154">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/service/impl/YuangongServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="885">
-          <caret line="43" column="50" lean-forward="true" selection-start-line="43" selection-start-column="50" selection-end-line="43" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/education_manage.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="41" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="912">
-          <caret line="87" column="34" lean-forward="true" selection-start-line="87" selection-start-column="34" selection-end-line="87" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resourses/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/web/studentservlet/DeleteStudentServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/web/classservlet/FindClassByccidServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/web/studentservlet/UpdateStudentServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="15" column="34" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/web/studentservlet/EchoStudentServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/web/studentservlet/StudentMessageServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="32" column="1" lean-forward="true" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/web/login_passservlet.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/studentmessage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3322">
-          <caret line="151" column="107" selection-start-line="151" selection-start-column="107" selection-end-line="151" selection-end-column="107" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/web/studentservlet/AddStudentServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="31" />
+        <state relative-caret-position="288">
+          <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#745#746#0" expanded="true" />
+            <element signature="e#802#803#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/web/loginservlet/VerifyCodeServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/dao/YuangongDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/web/classservlet/AddClassServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="29" />
+        <state relative-caret-position="198">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/web/classservlet/FindClassServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="20" column="66" selection-start-line="20" selection-start-column="55" selection-end-line="20" selection-end-column="66" />
+        <state relative-caret-position="88">
+          <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/web/loginservlet/FindYuangongServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/web/classservlet/AddClassServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/filter/SensitiveWordsFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="75" column="9" lean-forward="true" selection-start-line="75" selection-start-column="9" selection-end-line="75" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="970">
-          <caret line="61" column="120" selection-start-line="61" selection-start-column="120" selection-end-line="61" selection-end-column="120" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/web/loginservlet/UpdatePasswordServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/web/loginservlet/FindPasswordServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="20" column="73" lean-forward="true" selection-start-line="20" selection-start-column="73" selection-end-line="20" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/web/loginservlet/LoginServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="924">
-          <caret line="42" column="55" lean-forward="true" selection-start-line="42" selection-start-column="55" selection-end-line="42" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/filter/LoginFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/web/classservlet/UpdateClassServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="34" column="59" selection-start-line="34" selection-start-column="59" selection-end-line="34" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/web/classservlet/DeleteClassServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="17" column="24" lean-forward="true" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+        <state relative-caret-position="22">
+          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -1098,7 +790,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/service/impl/ClassServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
-          <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
+          <caret line="32" column="21" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
           <folding>
             <element signature="e#1113#1114#0" expanded="true" />
             <element signature="e#1155#1156#0" expanded="true" />
@@ -1113,6 +805,176 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/dao/impl/ClassDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="67" column="39" selection-start-line="67" selection-start-column="39" selection-end-line="67" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/dao/impl/YuangongDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="33" column="92" selection-start-line="33" selection-start-column="92" selection-end-line="33" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/web/classservlet/DeleteClassServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="16" column="59" selection-start-line="16" selection-start-column="59" selection-end-line="16" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/web/studentservlet/AddStudentServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/web/studentservlet/StudentMessageServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="24" column="44" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/service/impl/StudentServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="46" column="36" selection-start-line="46" selection-start-column="36" selection-end-line="46" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/utils/CommonUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/utils/TeacherUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/web/teacherservlet/AddTeacherServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="22" column="38" lean-forward="true" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/service/impl/TeacherServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-44">
+          <caret line="7" column="61" selection-start-line="7" selection-start-column="61" selection-end-line="7" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/web/teacherservlet/UpdateTeaherServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/web/courseservlet/FindCourseServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="26" column="52" lean-forward="true" selection-start-line="26" selection-start-column="52" selection-end-line="26" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/service/CourseService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/dao/CourseDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/service/impl/CourseServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="20" column="42" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/domain/Page.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-724">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/domain/CoursePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1276">
+          <caret line="64" column="17" selection-start-line="64" selection-start-column="17" selection-end-line="64" selection-end-column="17" />
+          <folding>
+            <element signature="e#267#268#0" expanded="true" />
+            <element signature="e#300#301#0" expanded="true" />
+            <element signature="e#349#350#0" expanded="true" />
+            <element signature="e#393#394#0" expanded="true" />
+            <element signature="e#426#427#0" expanded="true" />
+            <element signature="e#458#459#0" expanded="true" />
+            <element signature="e#505#506#0" expanded="true" />
+            <element signature="e#547#548#0" expanded="true" />
+            <element signature="e#579#580#0" expanded="true" />
+            <element signature="e#606#607#0" expanded="true" />
+            <element signature="e#647#648#0" expanded="true" />
+            <element signature="e#679#680#0" expanded="true" />
+            <element signature="e#714#715#0" expanded="true" />
+            <element signature="e#748#749#0" expanded="true" />
+            <element signature="e#799#800#0" expanded="true" />
+            <element signature="e#845#846#0" expanded="true" />
+            <element signature="e#873#874#0" expanded="true" />
+            <element signature="e#900#901#0" expanded="true" />
+            <element signature="e#937#938#0" expanded="true" />
+            <element signature="e#969#970#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/domain/Course.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-438">
+          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/chinasoft/student/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-320">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/dao/impl/StudentDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="464">
@@ -1123,27 +985,161 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/dao/impl/ClassDaoImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/dao/impl/CourseDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="66" column="39" lean-forward="true" selection-start-line="66" selection-start-column="39" selection-end-line="66" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/chinasoft/student/StudentTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="35" column="9" lean-forward="true" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+        <state relative-caret-position="318">
+          <caret line="73" column="93" lean-forward="true" selection-start-line="73" selection-start-column="93" selection-end-line="73" selection-end-column="93" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/chinasoft/student/ClassTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/chinasoft/student/CourseTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+        <state relative-caret-position="308">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#315#316#0" expanded="true" />
+            <element signature="e#343#344#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/web/teacherservlet/TeacherMessageServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="24" column="88" lean-forward="true" selection-start-line="24" selection-start-column="88" selection-end-line="24" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/addClass.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="68" column="10" selection-start-line="68" selection-start-column="10" selection-end-line="68" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/addCourse.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="530">
+          <caret line="66" column="10" selection-start-line="66" selection-start-column="10" selection-end-line="66" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/addstudent.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="66" column="10" selection-start-line="66" selection-start-column="10" selection-end-line="66" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/addteacher.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="66" column="10" selection-start-line="66" selection-start-column="10" selection-end-line="66" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/classmessage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="60" column="10" selection-start-line="60" selection-start-column="10" selection-end-line="60" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/courseMessage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="67" column="10" selection-start-line="67" selection-start-column="10" selection-end-line="67" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="706">
+          <caret line="55" column="11" selection-start-line="55" selection-start-column="11" selection-end-line="55" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/password.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="58" column="10" selection-start-line="58" selection-start-column="10" selection-end-line="58" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/studentmessage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="67" column="10" selection-start-line="67" selection-start-column="10" selection-end-line="67" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/teachermessage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="74" column="10" selection-start-line="74" selection-start-column="10" selection-end-line="74" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/updateClass.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="68" column="10" selection-start-line="68" selection-start-column="10" selection-end-line="68" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/updateCourse.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="66" column="10" selection-start-line="66" selection-start-column="10" selection-end-line="66" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/updatestudent.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="530">
+          <caret line="60" column="10" selection-start-line="60" selection-start-column="10" selection-end-line="60" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/updateteacher.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1398">
+          <caret line="67" column="10" selection-start-line="67" selection-start-column="10" selection-end-line="67" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="20" column="109" selection-start-line="20" selection-start-column="109" selection-end-line="20" selection-end-column="109" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/web/loginservlet/LoginServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="39" column="77" lean-forward="true" selection-start-line="39" selection-start-column="77" selection-end-line="39" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/filter/LoginFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="38" column="79" lean-forward="true" selection-start-line="38" selection-start-column="79" selection-end-line="38" selection-end-column="79" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/web/loginservlet/FindPasswordServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>

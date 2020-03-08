@@ -29,9 +29,9 @@ public class YuangongDaoImpl implements YuangongDao {
     }
 
     @Override
-    public Yuangong findPasswordBysno(int sno) {
+    public Yuangong findPasswordBysno(String sno) {
         String sql = "select * from yuangong where sno = ?";
-        return jdbcTemplate.queryForObject(sql, new BeanPropertyRowMapper<>(Yuangong.class), sno);
+        return jdbcTemplate.queryForObject(sql, new BeanPropertyRowMapper<>(Yuangong.class),sno);
     }
 
     @Override

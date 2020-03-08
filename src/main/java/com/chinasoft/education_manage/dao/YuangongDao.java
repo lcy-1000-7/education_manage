@@ -7,5 +7,5 @@ public interface YuangongDao {
 
     void updatePasswordById(Yuangong yuangong);
 
-    Yuangong findPasswordBysno(int sno);
+    Yuangong findPasswordBysno(String sno);
 }

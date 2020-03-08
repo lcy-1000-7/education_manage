@@ -15,9 +15,8 @@ import java.io.IOException;
 public class FindPasswordServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String str_sno = request.getParameter("sno");
-        int sno = Integer.parseInt(str_sno);
         YuangongService yuangongService = new YuangongServiceImpl();
-        Yuangong yuangong = yuangongService.findPasswordBysno(sno);
+        Yuangong yuangong = yuangongService.findPasswordBysno(str_sno);
         request.setAttribute("yuangong", yuangong);
         request.getRequestDispatcher("/password.jsp").forward(request, response);
     }
