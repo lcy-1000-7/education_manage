@@ -6,7 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ce63962-1290-4aa1-a806-24a7c573d12a" name="Default Changelist" comment="删除">
+    <list default="true" id="8ce63962-1290-4aa1-a806-24a7c573d12a" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/chinasoft/education_manage/dao/ClassDao.class" beforeDir="false" />
@@ -318,20 +318,6 @@
               <item name="chinasoft" type="462c0819:PsiDirectoryNode" />
               <item name="education_manage" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="education_manage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="education_manage" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resourses" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="education_manage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="education_manage" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -562,7 +548,7 @@
       <workItem from="1583719422742" duration="5929000" />
       <workItem from="1583726374448" duration="1696000" />
       <workItem from="1583731996152" duration="509000" />
-      <workItem from="1583738680562" duration="251000" />
+      <workItem from="1583738680562" duration="497000" />
     </task>
     <task id="LOCAL-00001" summary="lcy">
       <created>1583642184682</created>
@@ -599,7 +585,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583727017172</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="忽略文件">
+      <created>1583739177011</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1583739177011</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -635,7 +628,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84155000" />
+    <option name="totallyTimeSpent" value="84401000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -692,7 +685,8 @@
     <MESSAGE value="班级整合" />
     <MESSAGE value="全部整合" />
     <MESSAGE value="删除" />
-    <option name="LAST_COMMIT_MESSAGE" value="删除" />
+    <MESSAGE value="忽略文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="忽略文件" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/chinasoft/education_manage/service/impl/ClassServiceImpl.java">
