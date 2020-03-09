@@ -68,7 +68,7 @@ public class SensitiveWordsFilter implements Filter {
                 lists.add(line);
             }
             br.close();
-            System.out.println(lists);
+//            System.out.println(lists);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {

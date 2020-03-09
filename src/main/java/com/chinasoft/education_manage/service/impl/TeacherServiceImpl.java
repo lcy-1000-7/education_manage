@@ -3,8 +3,8 @@ package com.chinasoft.education_manage.service.impl;
 
 import com.chinasoft.education_manage.dao.TeacherDao;
 import com.chinasoft.education_manage.dao.impl.TeacherDaoImpl;
-import com.chinasoft.education_manage.domain.Page;
 import com.chinasoft.education_manage.domain.Teacher;
+import com.chinasoft.education_manage.domain.TeacherPage;
 import com.chinasoft.education_manage.service.TeacherService;
 
 import java.util.List;
@@ -71,7 +71,7 @@ public class TeacherServiceImpl implements TeacherService {
      * @return
      */
     @Override
-    public Page<Teacher> findGroupPage(String pageNums, String rowss, Map<String, String[]> map) {
+    public TeacherPage<Teacher> findGroupPage(String pageNums, String rowss, Map<String, String[]> map) {
 //        获取当前页号
         int pageNum = Integer.parseInt(pageNums);
 //        获取每页显示记录数
@@ -85,7 +85,7 @@ public class TeacherServiceImpl implements TeacherService {
 //        获取当前页的rows条数据
         List<Teacher> list = teacherDao.findGroupPage(start,rows,map);
 //        new一个Page,将对应的参数传入并返回一个Page<Teacher>对象
-        Page<Teacher> page = new Page<>(totalCount, totalPage, list, pageNum, rows);
+        TeacherPage<Teacher> page = new TeacherPage<>(totalCount, totalPage, list, pageNum, rows);
         return page;
     }
 }
