@@ -72,14 +72,11 @@
             <div class="layui-col-lg7" style="margin-top: 10px;margin-left: 20px;">
                 <a href="${pageContext.request.contextPath}/addCourse.jsp?currentPage=1&rows=3" class="layui-btn">添加课程</a>
             </div>
-            <form action="${pageContext.request.contextPath}/findCourseServlet" method="post">
-                <div  class="layui-col-lg4" style="text-align: right" >
-
-                    <div class="layui-input-inline" style="width: 300px;margin-top: 10px;">
-                        <input type="text" name="k" value="   " placeholder="手机/用户名/邮箱/昵称" class="layui-input key">
-                    </div>
-                    <button type="button" class="layui-btn sou" style="margin-top: 10px;">搜索</button>
+            <form action="${pageContext.request.contextPath}/findCourseServlet?currentPage=1&rows=3" method="post">
+                <div class="layui-input-inline" style="width: 300px;margin-top: 10px;">
+                    <input type="text" name="selectmessage" id="selectmessage" value="${selectmessage}" placeholder="学生编号/学生姓名" class="layui-input key">
                 </div>
+                <button type="submit" class="layui-btn sou" style="margin-top: 10px;">搜索</button>
             </form>
 
         </div>
@@ -104,8 +101,8 @@
                         <td>${course.stime}</td>
                         <td>${course.etime}</td>
                         <td>
-                            <a class="btn btn-default btn-sm" href="${pageContext.request.contextPath}/FindCourseBycnoServlet?cno=${course.cno}&currentPage=1&rows=3">修改</a>&nbsp;&nbsp;&nbsp;
-                            <a class="btn btn-default btn-sm" href="javascript:void (0)" onclick="showDeleteModal(${course.cno})">删除</a>
+                            <a class="btn btn-default btn-sm" href="${pageContext.request.contextPath}/findCourseBycnoServlet?cno=${course.cno}">修改</a>&nbsp;&nbsp;&nbsp;
+                            <a class="btn btn-default btn-sm" href="javascript:void (0)" onclick="deleteCourse(${course.cno})">删除</a>
                         </td>
                     </tr>
 
@@ -122,7 +119,7 @@
                     </c:if>
                     <c:if test="${page.currentPage > 1}">
                 <li>
-                    <a href="${pageContext.request.contextPath}/findClassServlet?currentPage=${page.currentPage - 1}&rows=3&cname=${search.cname[0]}" aria-label="Previous">
+                    <a href="${pageContext.request.contextPath}/findCourseServlet?currentPage=${page.currentPage - 1}&rows=3&cname=${selectmessage}" aria-label="Previous">
                         &laquo;
                     </a>
                     </c:if>
@@ -133,7 +130,7 @@
                         <li class="active"><a href="javascript:void (0)">${i}</a></li>
                     </c:if>
                     <c:if test="${page.currentPage != i}">
-                        <li><a href="${pageContext.request.contextPath}/findClassServlet?currentPage=${i}&rows=3&cname=${search.cname[0]}">${i}</a></li>
+                        <li><a href="${pageContext.request.contextPath}/findCourseServlet?currentPage=${i}&rows=3&cname=${selectmessage}">${i}</a></li>
                     </c:if>
                 </c:forEach>
 
@@ -143,7 +140,7 @@
                     </c:if>
                     <c:if test="${page.currentPage < page.totalPage}">
                 <li>
-                    <a href="${pageContext.request.contextPath}/findClassServlet?currentPage=${page.currentPage + 1}&rows=3&cname=${search.cname[0]}" aria-label="Previous">
+                    <a href="${pageContext.request.contextPath}/findCourseServlet?currentPage=${page.currentPage + 1}&rows=3&cname=${selectmessage}" aria-label="Previous">
                         &raquo;
                     </a>
                     </c:if>
@@ -155,33 +152,6 @@
 
     </div>
 
-<!-- 模态框（Modal） -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                        &times;
-                    </button>
-                    <h4 class="modal-title" id="myModalLabel">
-                        提示
-                    </h4>
-                </div>
-                <input id="uid" name="uid" type="hidden" >
-                <div class="modal-body">
-                    <div>确定删除吗？</div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">
-                        关闭
-                    </button>
-                    <button type="button" class="btn btn-primary" id="deleteUserBtn">
-                        确定删除
-                    </button>
-                </div>
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal -->
-    </div>
 </div>
 <script src="./layui/layui.js"></script>
 <script src="css/jquery-3.3.1.min.js"></script>
@@ -193,19 +163,12 @@
         var element = layui.element;
 
     });
-    function showDeleteModal(obj) {
-        $("#uid").val(obj);
-        $("#myModal").modal({
-                            backdrop : 'static',
-                            keyboard : false
-        });
+    function deleteCourse(cno) {
+        console.log(cno);
+        location.href = "${pageContext.request.contextPath}/deleteCourseServlet?cno=" + cno;
+
     }
-    $(function() {
-// 删除模态框的确定按钮的点击事件
-        $("#deleteUserBtn").click(function() {
-            location.href="${pageContext.request.contextPath}/deleteClassServlet?ccid="+$("#uid").val()
-        });
-    });
+
 </script>
 </body>
 </html>

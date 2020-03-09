@@ -1,8 +1,14 @@
 package com.chinasoft.student;
 
+import com.chinasoft.education_manage.dao.CourseDao;
+import com.chinasoft.education_manage.dao.impl.CourseDaoImpl;
+import com.chinasoft.education_manage.domain.Course;
+import com.chinasoft.education_manage.domain.CoursePage;
 import com.chinasoft.education_manage.service.CourseService;
 import com.chinasoft.education_manage.service.impl.CourseServiceImpl;
 import org.junit.Test;
+
+import java.util.List;
 
 public class CourseTest {
     CourseService courseService = new CourseServiceImpl();
@@ -10,5 +16,15 @@ public class CourseTest {
     @Test
     public void findCourse(){
         System.out.println(courseService.findCourseBycno("c001"));
+    }
+
+    @Test
+    public void selectTest(){
+        CourseDao courseDao = new CourseDaoImpl();
+        List<Course> course = courseDao.findAllCourse(0, 3, "学");
+        for (Course course1 : course) {
+            System.out.println(course1);
+        }
+        System.out.println(courseDao.findTotal("小学"));
     }
 }

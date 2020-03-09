@@ -21,14 +21,8 @@ public class YuangongServiceImpl implements YuangongService {
     }
 
     @Override
-    public Yuangong findPasswordBysno(String sno) {
-        return yuangongDao.findPasswordBysno(sno);
+    public void updatePasswordBySname(Yuangong yuangong,String newPassword) {
+        yuangongDao.updatePasswordBySname(yuangong,newPassword);
     }
-
-    @Override
-    public void updatePasswordById(Yuangong yuangong) {
-        yuangongDao.updatePasswordById(yuangong);
-    }
-
 
 }

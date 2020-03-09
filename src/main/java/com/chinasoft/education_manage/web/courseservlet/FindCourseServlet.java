@@ -11,7 +11,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.Map;
 
 @WebServlet("/findCourseServlet")
 public class FindCourseServlet extends HttpServlet {
@@ -21,14 +20,11 @@ public class FindCourseServlet extends HttpServlet {
         int currentpage = Integer.parseInt(str_currentPage);
         String str_rows = request.getParameter("rows");
         int rows = Integer.parseInt(str_rows);
-
-        Map<String, String[]> search = request.getParameterMap();
+        String selectmessage = request.getParameter("selectmessage");
         CourseService courseService = new CourseServiceImpl();
-        CoursePage<Course> page = courseService.findCourse(currentpage,rows,search);
-
+        CoursePage<Course> page = courseService.findCourse(currentpage,rows,selectmessage);
         request.setAttribute("page",page);
-        request.setAttribute("search",search);
-
+        request.setAttribute("selectmessage",selectmessage);
         request.getRequestDispatcher("/courseMessage.jsp").forward(request,response);
     }
 

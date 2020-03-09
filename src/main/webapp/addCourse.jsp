@@ -73,31 +73,25 @@
         <div class="container" style="width: 400px;">
             <h3 style="text-align: center;">新增课程</h3>
             <form action="${pageContext.request.contextPath}/addCourseServlet?currentPage=1&rows=3" method="post">
-                <div class="form-group">
-                    <label for="classnum">课程编号：</label>
-                    <input type="text" class="form-control" id="classnum" name="classnum"   placeholder="请输入课程编号" />
-                </div>
-
-
 
                 <div class="form-group">
-                    <label for="coursename">课程名称：</label>
-                    <input type="text" class="form-control" id="coursename"  name="classname" placeholder="请输入课程名称" />
+                    <label for="cname">课程名称：</label>
+                    <input type="text" class="form-control" id="cname"  name="cname" placeholder="请输入课程名称" />
                 </div>
 
                 <div class="form-group">
                     <label for="introduce">课程简介：</label>
-                    <input type="text" class="form-control" id="introduce" name="intro" placeholder="请输入课程简介"/>
+                    <input type="text" class="form-control" id="introduce" name="introduce" placeholder="请输入课程简介"/>
                 </div>
 
                 <div class="form-group">
                     <label for="stime">开课时间：</label>
-                    <input type="date" class="form-control" id="stime" name="start" placeholder="请输入开课时间"/>
+                    <input type="date" class="form-control" id="stime" name="stime" placeholder="请输入开课时间"/>
                 </div>
 
                 <div class="form-group">
                     <label for="etime">结课时间：</label>
-                    <input type="date" class="form-control" id="etime" name="end" placeholder="请输入就读学校"/>
+                    <input type="date" class="form-control" id="etime" name="etime" placeholder="请输入就读学校"/>
                 </div>
 
                 <div class="form-group" style="text-align: center">

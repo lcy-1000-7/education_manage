@@ -64,9 +64,16 @@
         </fieldset>
         <form class="layui-form " action="${pageContext.request.contextPath}/updatePasswordServlet">
             <div class="layui-form-item">
+                <label class="layui-form-label">原密码</label>
+                <div class="layui-input-block">
+                    <input type="text" name="oldpwd" value="${yuangong.password}" placeholder=""
+                           class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
                 <label class="layui-form-label">新密码</label>
                 <div class="layui-input-block">
-                    <input type="text" name="pwd1" value="${yuangong.password}" placeholder="新密码..."
+                    <input type="password" name="pwd1" id="pwd1" value="" placeholder="新密码..."
                            class="layui-input">
                 </div>
             </div>
@@ -74,9 +81,14 @@
             <div class="layui-form-item">
                 <label class="layui-form-label">重复新密码</label>
                 <div class="layui-input-block">
-                    <input type="text" name="pwd2" value="${yuangong.password}" placeholder="重复新密码..."
+                    <input type="password" name="pwd2" id="pwd2" value="" placeholder="重复新密码..."
                            class="layui-input">
                 </div>
+            </div>
+            <div class="alert alert-warning alert-dismissible" role="alert" style="margin-top: 20px;margin-left: 20px">
+                <button type="button" class="close" data-dismiss="alert">
+                    <span>&times;</span></button>
+                <strong>${message == null ? "": message}</strong>
             </div>
 
             <div class="layui-form-item">
