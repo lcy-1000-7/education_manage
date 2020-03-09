@@ -3,6 +3,7 @@ package com.chinasoft.education_manage.dao.impl;
 import com.chinasoft.education_manage.dao.TeacherDao;
 import com.chinasoft.education_manage.domain.Teacher;
 import com.chinasoft.education_manage.utils.JDBCUtils;
+import com.sun.org.apache.bcel.internal.generic.IFNULL;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.util.StringUtils;
@@ -34,8 +35,8 @@ public class TeacherDaoImpl implements TeacherDao {
         String sql1 = "select max(tno) from Teacher8";
         String sql2 = "insert into Teacher8 values(?,?,?,?,?,?,?,?,?,?)";
         String max_tno = jdbcTemplate.queryForObject(sql1, String.class);
-        String tno = Integer.toString(Integer.parseInt(max_tno.replace("t", "1")) + 1).replace("1", "t");
-        jdbcTemplate.update(sql2,tno,teacher.getTname(),teacher.getTsex(),teacher.getTbirth(),teacher.getTphone(),teacher.getTemail(),
+        String tno = "t"+(Integer.toString(Integer.parseInt(max_tno.replace("t", "1")) + 1)).substring(1);
+        jdbcTemplate.update(sql2,tno, teacher.getTname(),teacher.getTsex(),teacher.getTbirth(),teacher.getTphone(),teacher.getTemail(),
                 teacher.getCourse(),teacher.getSchool(),teacher.getEducation(),teacher.getResult());
     }
 
