@@ -24,7 +24,7 @@ public class LoginFilter implements Filter {
 //        3.判断是否包含有登陆相关的路径，然后放行掉
         if (uri.contains("/login.jsp") || uri.contains("/vcode") ||
                 uri.contains("/css/") || uri.contains("/js/") ||
-                uri.contains("/loginServlet") ||
+                uri.contains("/fonts/") || uri.contains("/loginServlet") ||
                 uri.contains("/img/") || uri.contains("/layui/")) {
             chain.doFilter(req, resp);
         } else {
