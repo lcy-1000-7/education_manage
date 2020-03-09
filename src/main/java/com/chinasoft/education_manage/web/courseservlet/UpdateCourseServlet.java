@@ -25,7 +25,6 @@ public class UpdateCourseServlet extends HttpServlet {
         Course aCourse = CourseUtils.populate(new Course(), parameterMap);
         CourseService courseService = new CourseServiceImpl();
         courseService.updateCourse(aCourse);
-        System.out.println(aCourse);
         response.sendRedirect(request.getContextPath()+"/findCourseServlet?currentPage=1&rows=3");
 
 }

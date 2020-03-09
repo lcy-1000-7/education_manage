@@ -19,7 +19,7 @@
 <body class="layui-layout-body">
 <div class="layui-layout layui-layout-admin" >
     <div class="layui-header"style="background-color: gainsboro;">
-        <div class="layui-logo" style="background-color: #000000;">首页</div>
+        <div class="layui-logo" style="background-color: #000000;"><a href="${pageContext.request.contextPath}/index.jsp">首页</a></div>
     </div>
 
     <div class="layui-side layui-bg-black">
@@ -60,8 +60,8 @@
                     </dl>
                 </li>
                 <li class="layui-nav-item"><a href="">财务管理</a></li>
-                <li class="layui-nav-item"><a href="${pageContext.request.contextPath}/findPasswordServlet?sno=${yuangong.sno}">修改密码</a></li>
-                <li class="layui-nav-item"><a href="">退出</a></li>
+                <li class="layui-nav-item"><a href="${pageContext.request.contextPath}/password.jsp">修改密码</a></li>
+                <li class="layui-nav-item"><a href="${sessionScope.remove("yuangong")}">退出</a></li>
             </ul>
         </div>
     </div>

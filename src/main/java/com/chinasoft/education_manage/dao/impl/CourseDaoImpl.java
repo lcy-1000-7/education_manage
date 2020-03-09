@@ -18,30 +18,13 @@ public class CourseDaoImpl implements CourseDao {
     @Override
     public int findTotal(String search) {
         String sql = "select count(*) from course8 where 1=1 ";
-        StringBuffer sb  = new StringBuffer(sql);
-        if (!StringUtils.isEmpty(search)){
-            return jdbcTemplate.queryForObject(sb.toString(), int.class);
-        }else {
-            sb.append(" and cname like ?");
-            search = "%"+search+"%";
-            return jdbcTemplate.queryForObject(sb.toString(),int.class,search);
-        }
+        return jdbcTemplate.queryForObject(sql,int.class);
     }
 
     @Override
     public List<Course> findAllCourse(int start, int rows, String search) {
-        String sql = "select * from course8 where 1 = 1 ";
-        StringBuffer sb = new StringBuffer(sql);
-        List list = new ArrayList();
-        if (!StringUtils.isEmpty(search)){
-            search = "%"+search+"%";
-            sb.append(" and cname like ?");
-            list.add(search);
-        }
-        sb.append(" limit ?,? ");
-        list.add(start);
-        list.add(rows);
-        return jdbcTemplate.query(sb.toString(), new BeanPropertyRowMapper<>(Course.class),list.toArray());
+        String sql = "select * from course8 limit ?,? ";
+        return jdbcTemplate.query(sql,new BeanPropertyRowMapper<>(Course.class),start,rows);
     }
 
     @Override
