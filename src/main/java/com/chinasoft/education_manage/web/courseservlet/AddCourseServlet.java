@@ -30,7 +30,7 @@ public class AddCourseServlet extends HttpServlet {
 
         CourseService courseService = new CourseServiceImpl();
         courseService.addCourse(aCourse);
-        response.sendRedirect(request.getContextPath()+"findCourseServlet?currentPage=1&rows=3");
+        response.sendRedirect(request.getContextPath()+"/findCourseServlet?currentPage=1&rows=3");
 
     }
 

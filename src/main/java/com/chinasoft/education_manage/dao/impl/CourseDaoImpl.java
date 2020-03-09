@@ -1,12 +1,12 @@
 package com.chinasoft.education_manage.dao.impl;
 
-import com.alibaba.druid.util.StringUtils;
+
 import com.chinasoft.education_manage.dao.CourseDao;
 import com.chinasoft.education_manage.domain.Course;
-
 import com.chinasoft.education_manage.utils.JDBCUtils;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.util.StringUtils;
 
 import java.util.ArrayList;
 import java.util.List;

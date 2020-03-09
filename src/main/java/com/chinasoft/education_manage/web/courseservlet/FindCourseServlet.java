@@ -16,7 +16,7 @@ import java.util.Map;
 @WebServlet("/findCourseServlet")
 public class FindCourseServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.setCharacterEncoding("UTF-8");
+        request.setCharacterEncoding("utf-8");
         String str_currentPage = request.getParameter("currentPage");
         int currentpage = Integer.parseInt(str_currentPage);
         String str_rows = request.getParameter("rows");
@@ -32,7 +32,7 @@ public class FindCourseServlet extends HttpServlet {
         request.getRequestDispatcher("/courseMessage.jsp").forward(request,response);
     }
 
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doGet(javax.servlet.http.HttpServletRequest request, javax.servlet.http.HttpServletResponse response) throws javax.servlet.ServletException, IOException {
         this.doPost(request, response);
     }
 }
