@@ -41,8 +41,9 @@ public class LoginServlet extends HttpServlet {
         if (y != null) {
             //表示登陆成功
             session.setAttribute("yuangong", yuangong);
-            response.sendRedirect(request.getContextPath() + "/index.jsp");
-
+            String sno = yuangong.getSno();
+            request.setAttribute("sno",sno);
+            request.getRequestDispatcher("index.jsp").forward(request,response);
         } else {
             request.setAttribute("msg", "用户名或密码输入错误");
             request.getRequestDispatcher("/login.jsp").forward(request, response);
