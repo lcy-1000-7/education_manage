@@ -2,6 +2,7 @@ package com.chinasoft.education_manage.web.teacherservlet;
 
 import com.chinasoft.education_manage.domain.Page;
 import com.chinasoft.education_manage.domain.Teacher;
+import com.chinasoft.education_manage.domain.TeacherPage;
 import com.chinasoft.education_manage.service.TeacherService;
 import com.chinasoft.education_manage.service.impl.TeacherServiceImpl;
 
@@ -31,7 +32,7 @@ public class TeacherMessageServlet extends HttpServlet {
         System.out.println(pageNum);
         Map<String, String[]> map = request.getParameterMap();
         TeacherService service = new TeacherServiceImpl();
-        Page<Teacher> page = service.findGroupPage(pageNum,rows,map);
+        TeacherPage<Teacher> page = service.findGroupPage(pageNum,rows,map);
         request.setAttribute("page",page);
         request.setAttribute("map",map);
         request.getRequestDispatcher("/teachermessage.jsp").forward(request,response);

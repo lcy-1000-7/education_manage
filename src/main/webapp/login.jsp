@@ -11,7 +11,7 @@
     <script type="text/javascript">
         function refreshCode() {
             var vcode = document.getElementById("vcode");
-            vcode.src = "${pageContext.request.contextPath}/vcode" + new Date().getTime();
+            vcode.src = "${pageContext.request.contextPath}/vcode?time=" + new Date().getTime();
         }
     </script>
 </head>

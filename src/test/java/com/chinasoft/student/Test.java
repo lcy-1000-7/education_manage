@@ -3,8 +3,11 @@ package com.chinasoft.student;
 import com.chinasoft.education_manage.dao.TeacherDao;
 import com.chinasoft.education_manage.dao.impl.TeacherDaoImpl;
 import com.chinasoft.education_manage.domain.Teacher;
+import com.chinasoft.education_manage.domain.Yuangong;
 import com.chinasoft.education_manage.service.TeacherService;
+import com.chinasoft.education_manage.service.YuangongService;
 import com.chinasoft.education_manage.service.impl.TeacherServiceImpl;
+import com.chinasoft.education_manage.service.impl.YuangongServiceImpl;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -12,6 +15,7 @@ import java.util.List;
 
 public class Test {
     TeacherService service = new TeacherServiceImpl();
+    YuangongService yuangongService = new YuangongServiceImpl();
 
 
     @org.junit.Test
@@ -35,7 +39,7 @@ public class Test {
     @org.junit.Test
     public void findGroupPageTest(){
 //    String pageNum, String rows, Map<String, String[]> map
-        int pagNum = 1;
+        int pagNum = 3;
         int rows = 5;
         HashMap<String, String[]> map = new HashMap<>();
         TeacherDao dao = new TeacherDaoImpl();
@@ -43,5 +47,7 @@ public class Test {
         System.out.println(groupPage);
 
     }
+
+
 
 }

@@ -1,7 +1,7 @@
 package com.chinasoft.education_manage.service;
 
-import com.chinasoft.education_manage.domain.Page;
 import com.chinasoft.education_manage.domain.Teacher;
+import com.chinasoft.education_manage.domain.TeacherPage;
 
 import java.util.List;
 import java.util.Map;
@@ -39,5 +39,5 @@ public interface TeacherService {
      * 分页查询
      * @return
      */
-    Page<Teacher> findGroupPage(String pageNum, String rows, Map<String, String[]> map);
+    TeacherPage<Teacher> findGroupPage(String pageNum, String rows, Map<String, String[]> map);
 }
