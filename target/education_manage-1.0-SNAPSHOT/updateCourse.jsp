@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
-  User: Administrator
-  Date: 2020/3/6
-  Time: 20:16
+  User: ZLM
+  Date: 2020/3/8
+  Time: 19:26
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -11,7 +11,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>layout 后台大布局 - Layui</title>
+    <title>修改课程信息</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
     <link rel="stylesheet" href="./layui/css/layui.css">
     <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -59,21 +60,60 @@
                     </dl>
                 </li>
                 <li class="layui-nav-item"><a href="">财务管理</a></li>
-                <li class="layui-nav-item"><a href="${pageContext.request.contextPath}/findPasswordServlet?sno=${sno}">修改密码</a></li>
+                <li class="layui-nav-item"><a href="${pageContext.request.contextPath}/findPasswordServlet?sno=${yuangong.sno}">修改密码</a></li>
                 <li class="layui-nav-item"><a href="">退出</a></li>
             </ul>
         </div>
     </div>
 
     <div class="layui-body">
-        <!-- 内容主体区域 -->
-        <div style="padding: 15px;">内容主体区域</div>
+        <fieldset class="layui-elem-field layui-field-title">
+
+        </fieldset>
+        <div class="container" style="width: 400px;">
+            <h3 style="text-align: center;">新增课程</h3>
+            <form action="${pageContext.request.contextPath}/updateCourseServlet" method="post">
+                <div class="form-group">
+                    <label for="cno">课程编号：</label>
+                    <input type="text" class="form-control" id="cno" name="coursenum" value="${aCourse.cno}"  placeholder="请输入课程编号" />
+                </div>
+
+
+
+                <div class="form-group">
+                    <label for="cname">课程名称：</label>
+                    <input type="text" class="form-control" id="cname"  name="coursename" value="${aCourse.cname}" placeholder="请输入课程名称" />
+                </div>
+
+                <div class="form-group">
+                    <label for="introduce">课程简介：</label>
+                    <input type="text" class="form-control" id="introduce" name="intro" value="${aCourse.introduce}" placeholder="请输入课程简介"/>
+                </div>
+
+                <div class="form-group">
+                    <label for="stime">开课时间：</label>
+                    <input type="date" class="form-control" id="stime" name="start" value="${aCourse.stime}" placeholder="请输入开课时间"/>
+                </div>
+
+                <div class="form-group">
+                    <label for="etime">结课时间：</label>
+                    <input type="date" class="form-control" id="etime" name="end" placeholder="请输入就读学校"/>
+                </div>
+
+                <div class="form-group" style="text-align: center">
+                    <input class="btn btn-primary" type="submit" value="提交" />
+                    <input class="btn btn-default" type="reset" value="重置" />
+                    <input class="btn btn-default" onclick="javascript:history.go(-1)" type="button" value="返回"/>
+                </div>
+            </form>
+        </div>
     </div>
 
 
 </div>
 <script src="./layui/layui.js"></script>
 <script src="css/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 <script>
     //JavaScript代码区域
     layui.use('element', function(){
