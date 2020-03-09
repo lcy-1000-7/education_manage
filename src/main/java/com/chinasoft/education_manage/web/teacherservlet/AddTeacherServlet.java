@@ -20,10 +20,10 @@ public class AddTeacherServlet extends HttpServlet {
         //        将获取到的参数封装为map集合
         Map<String, String[]> map = request.getParameterMap();
         Teacher teacher = TeacherUtils.populate(new Teacher(), map);
-//        System.out.println(teacher);
         TeacherService service = new TeacherServiceImpl();
         service.addTeacher(teacher);
-        request.getRequestDispatcher("/teacherMessageServlet").forward(request,response);
+        response.setCharacterEncoding("utf-8");
+        response.sendRedirect(request.getContextPath()+"/teacherMessageServlet?pageNum=1&rows=5");
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
