@@ -80,7 +80,7 @@
 
                 <div class="form-group">
                     <label for="cname">课程名称：</label>
-                    <input type="text" class="form-control" id="cname"  name="cname" value="${aCourse.cname}" placeholder="请输入课程名称" />
+                    <input type="text" class="form-control" id="cname"  name="cname" readonly="readonly" value="${aCourse.cname}" placeholder="请输入课程名称" />
                 </div>
 
                 <div class="form-group">

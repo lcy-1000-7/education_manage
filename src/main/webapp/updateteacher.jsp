@@ -78,7 +78,7 @@
                     <input name="tno" type="hidden" value="${teacher.tno}">
                     <div class="form-group">
                         <label for="tname">教师姓名：</label>
-                        <input type="text" class="form-control" id="tname" name="tname" value="${teacher.tname}" required="required" placeholder="请输入姓名" />
+                        <input type="text" class="form-control" id="tname" name="tname" value="${teacher.tname}" readonly="readonly" required="required" placeholder="请输入姓名" />
                     </div>
 
 
@@ -111,7 +111,7 @@
 
                     <div class="form-group">
                         <label for="course">学科：</label>
-                        <input type="text" class="form-control" id="course" name="course" value="${teacher.course}" required="required" placeholder="请输入教学科目"/>
+                        <input type="text" class="form-control" id="course" name="course" value="${teacher.course}" readonly="readonly" required="required" placeholder="请输入教学科目"/>
                     </div>
 
                     <div class="form-group">

@@ -52,7 +52,7 @@
                     </dl>
                 </li>
                 <li class="layui-nav-item"><a href="">财务管理</a></li>
-                <li class="layui-nav-item"><a href="${pageContext.request.contextPath}/password.jsp">修改密码</a></li>
+                <li class="layui-nav-item"><a href="javascript:void(0)">修改密码</a></li>
                 <li class="layui-nav-item"><a href="${pageContext.request.contextPath}/loginOutServlet">退出</a></li>
             </ul>
         </div>
@@ -63,13 +63,6 @@
             <legend>修改密码</legend>
         </fieldset>
         <form class="layui-form " action="${pageContext.request.contextPath}/updatePasswordServlet">
-            <div class="layui-form-item">
-                <label class="layui-form-label">原密码</label>
-                <div class="layui-input-block">
-                    <input type="text" name="oldpwd" value="${yuangong.password}" placeholder=""
-                           class="layui-input">
-                </div>
-            </div>
             <div class="layui-form-item">
                 <label class="layui-form-label">新密码</label>
                 <div class="layui-input-block">

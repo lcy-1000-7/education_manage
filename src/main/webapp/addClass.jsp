@@ -33,7 +33,7 @@
                     <a href="javascript:;">班级管理</a>
                     <dl class="layui-nav-child">
                         <dd><a href="${pageContext.request.contextPath}/findClassServlet?currentPage=1&rows=3">班级信息</a></dd>
-                        <dd><a href="${pageContext.request.contextPath}/classServlet">新增班级</a></dd>
+                        <dd><a href="javascript:void(0)">新增班级</a></dd>
 
                     </dl>
                 </li>
@@ -67,10 +67,7 @@
         <div class="container" style="width: 400px;">
             <h3 style="text-align: center;">新增班级</h3>
             <form action="${pageContext.request.contextPath}/addClassServlet?currentPage=1&rows=3" method="post">
-                <div class="form-group">
-                    <label for="classnum">班级编号：</label>
-                    <input type="text" class="form-control" id="classnum" name="ccid"   placeholder="请输入班级编号" />
-                </div>
+
 
 
 

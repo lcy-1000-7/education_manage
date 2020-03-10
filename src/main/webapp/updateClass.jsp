@@ -77,24 +77,24 @@
             <form action="${pageContext.request.contextPath}/updateClassServlet" method="post">
                 <div class="form-group">
                     <label for="classnum">班级编号：</label>
-                    <input type="text" class="form-control" id="classnum" name="ccid" value="${aClass.ccid}"   placeholder="请输入班级编号" />
+                    <input type="text" class="form-control" id="classnum" name="ccid" value="${aClass.ccid}" readonly="readonly"   placeholder="请输入班级编号" />
                 </div>
 
 
 
                 <div class="form-group">
                     <label for="classname">班级名称：</label>
-                    <input type="text" class="form-control" id="classname"  name="cname" value="${aClass.cname}" placeholder="请输入班级名称" />
+                    <input type="text" class="form-control" id="classname"  name="cname" value="${aClass.cname}" readonly="readonly" placeholder="请输入班级名称" />
                 </div>
 
                 <div class="form-group">
                     <label for="teachername">教师姓名：</label>
-                    <input type="text" class="form-control" id="teachername" name="tname" value="${aClass.tname}" placeholder="请输入教师姓名"/>
+                    <input type="text" class="form-control" id="teachername" name="tname" value="${aClass.tname}" readonly="readonly" placeholder="请输入教师姓名"/>
                 </div>
 
                 <div class="form-group">
                     <label for="coursename">课程名称：</label>
-                    <input type="text" class="form-control" id="coursename" name="ccname" value="${aClass.ccname}" placeholder="请输入课程名称"/>
+                    <input type="text" class="form-control" id="coursename" name="ccname" value="${aClass.ccname}" readonly="readonly" placeholder="请输入课程名称"/>
                 </div>
 
 

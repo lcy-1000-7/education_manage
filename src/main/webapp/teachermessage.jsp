@@ -54,7 +54,7 @@
                 <li class="layui-nav-item layui-nav-itemed" >
                     <a href="javascript:;">教师管理</a>
                     <dl class="layui-nav-child">
-                        <dd><a href="${pageContext.request.contextPath}/teacherMessageServlet?pageNum=1&rows=5">教师信息</a></dd>
+                        <dd><a href="javascript:void(0)">教师信息</a></dd>
                         <dd><a href="${pageContext.request.contextPath}/teacherServlet">新增教师</a></dd>
 
                     </dl>

@@ -31,7 +31,7 @@ public class UpdateCourseServlet extends HttpServlet {
     CourseService courseService = new CourseServiceImpl();
     courseService.updateCourse(aCourse);
 
-    response.sendRedirect(request.getContextPath()+"findCourseServlet?currentPage=1&rows=3");
+    response.sendRedirect(request.getContextPath()+"/findCourseServlet?currentPage=1&rows=3");
 
 }
 

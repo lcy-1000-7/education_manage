@@ -55,7 +55,7 @@
                 <li class="layui-nav-item layui-nav-itemed" >
                     <a href="javascript:;">课程管理</a>
                     <dl class="layui-nav-child">
-                        <dd><a href="${pageContext.request.contextPath}/findCourseServlet?currentPage=1&rows=3">课程信息</a></dd>
+                        <dd><a href="javascript:void(0)">课程信息</a></dd>
                         <dd><a href="${pageContext.request.contextPath}/addCourse.jsp">新增课程</a></dd>
 
                     </dl>

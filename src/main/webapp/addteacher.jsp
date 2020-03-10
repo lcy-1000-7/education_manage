@@ -6,6 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -55,7 +56,7 @@
                     <a href="javascript:;">教师管理</a>
                     <dl class="layui-nav-child">
                         <dd><a href="${pageContext.request.contextPath}/teacherMessageServlet?pageNum=1&rows=5">教师信息</a></dd>
-                        <dd><a href="${pageContext.request.contextPath}/teacherServlet">新增教师</a></dd>
+                        <dd><a href="javascript:void(0)">新增教师</a></dd>
 
                     </dl>
                 </li>

@@ -19,7 +19,7 @@ public class TeacherServlet extends HttpServlet {
         TeacherService teacherService = new TeacherServiceImpl();
         List<Class> list = teacherService.echoClass();
         request.setAttribute("list",list);
-        request.getRequestDispatcher("/addstudent.jsp").forward(request,response);
+        request.getRequestDispatcher("/addteacher.jsp").forward(request,response);
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

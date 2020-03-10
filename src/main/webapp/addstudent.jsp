@@ -32,7 +32,7 @@
                     <a href="javascript:;">学员管理</a>
                     <dl class="layui-nav-child">
                         <dd><a href="${pageContext.request.contextPath}/studentMessageServlet?pageNum=1&rows=5">学员信息</a></dd>
-                        <dd><a href="${pageContext.request.contextPath}/studentServlet">新增学员</a></dd>
+                        <dd><a href="javascript:void(0)">新增学员</a></dd>
 
                     </dl>
                 </li>

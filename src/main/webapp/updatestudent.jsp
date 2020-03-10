@@ -107,7 +107,7 @@
 
                 <div class="form-group">
                     <label for="cno">年级：</label>
-                    <input type="text" class="form-control" id="cno" name="cno" value="${student.cno}" placeholder="请输入年级"/>
+                    <input type="text" class="form-control" id="cno" name="cno" value="${student.cno}" readonly="readonly" placeholder="请输入年级"/>
                 </div>
 
                 <div class="form-group" style="text-align: center">
