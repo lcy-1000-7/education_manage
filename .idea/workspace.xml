@@ -492,7 +492,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.education_manage">
+  <component name="RunManager">
     <configuration name="StudentTest.add" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="education_manage" />
       <extension name="coverage">
