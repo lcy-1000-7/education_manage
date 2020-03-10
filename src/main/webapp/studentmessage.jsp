@@ -62,7 +62,7 @@
                 </li>
                 <li class="layui-nav-item"><a href="">财务管理</a></li>
                 <li class="layui-nav-item"><a href="${pageContext.request.contextPath}/password.jsp">修改密码</a></li>
-                <li class="layui-nav-item"><a href="">退出</a></li>
+                <li class="layui-nav-item"><a href="${pageContext.request.contextPath}/loginOutServlet">退出</a></li>
             </ul>
         </div>
     </div>
@@ -170,6 +170,7 @@
     function deleteStudent(sno) {
         location.href = "${pageContext.request.contextPath}/deleteStudentServlet?sno=" + sno;
     }
+
 </script>
 </body>
 </html>
