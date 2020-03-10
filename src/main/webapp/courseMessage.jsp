@@ -72,9 +72,10 @@
             <div class="layui-col-lg7" style="margin-top: 10px;margin-left: 20px;">
                 <a href="${pageContext.request.contextPath}/addCourse.jsp?currentPage=1&rows=3" class="layui-btn">添加课程</a>
             </div>
+
             <form action="${pageContext.request.contextPath}/findCourseServlet?currentPage=1&rows=3" method="post">
                 <div class="layui-input-inline" style="width: 300px;margin-top: 10px;">
-                    <input type="text" name="selectmessage" id="selectmessage" value="${selectmessage}" placeholder="学生编号/学生姓名" class="layui-input key">
+                    <input type="text" name="cname" id="cname" value="${search.cname[0]}" placeholder="课程名称" class="layui-input key">
                 </div>
                 <button type="submit" class="layui-btn sou" style="margin-top: 10px;">搜索</button>
             </form>
@@ -119,7 +120,7 @@
                     </c:if>
                     <c:if test="${page.currentPage > 1}">
                 <li>
-                    <a href="${pageContext.request.contextPath}/findCourseServlet?currentPage=${page.currentPage - 1}&rows=3&cname=${selectmessage}" aria-label="Previous">
+                    <a href="${pageContext.request.contextPath}/findCourseServlet?currentPage=${page.currentPage - 1}&rows=3&cname=${search.cname[0]}" aria-label="Previous">
                         &laquo;
                     </a>
                     </c:if>
@@ -130,7 +131,7 @@
                         <li class="active"><a href="javascript:void (0)">${i}</a></li>
                     </c:if>
                     <c:if test="${page.currentPage != i}">
-                        <li><a href="${pageContext.request.contextPath}/findCourseServlet?currentPage=${i}&rows=3&cname=${selectmessage}">${i}</a></li>
+                        <li><a href="${pageContext.request.contextPath}/findCourseServlet?currentPage=${i}&rows=3&cname=${search.cname[0]}">${i}</a></li>
                     </c:if>
                 </c:forEach>
 
@@ -140,7 +141,7 @@
                     </c:if>
                     <c:if test="${page.currentPage < page.totalPage}">
                 <li>
-                    <a href="${pageContext.request.contextPath}/findCourseServlet?currentPage=${page.currentPage + 1}&rows=3&cname=${selectmessage}" aria-label="Previous">
+                    <a href="${pageContext.request.contextPath}/findCourseServlet?currentPage=${page.currentPage + 1}&rows=3&cname=${search.cname[0]}" aria-label="Previous">
                         &raquo;
                     </a>
                     </c:if>

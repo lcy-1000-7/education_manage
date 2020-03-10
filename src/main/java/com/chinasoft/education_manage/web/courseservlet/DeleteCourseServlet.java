@@ -15,7 +15,8 @@ public class DeleteCourseServlet extends HttpServlet {
         String cno = request.getParameter("cno");
         CourseService courseService = new CourseServiceImpl();
         courseService.deleteCourse(cno);
-        response.sendRedirect(request.getContextPath()+"/findCourseServlet?currentPage=1&rows=3");
+
+        response.sendRedirect(request.getContextPath()+"findCourseServlet?currentPage=1&rows=3");
 
     }
 
