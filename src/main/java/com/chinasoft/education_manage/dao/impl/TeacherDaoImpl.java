@@ -3,7 +3,6 @@ package com.chinasoft.education_manage.dao.impl;
 import com.chinasoft.education_manage.dao.TeacherDao;
 import com.chinasoft.education_manage.domain.Teacher;
 import com.chinasoft.education_manage.utils.JDBCUtils;
-import com.sun.org.apache.bcel.internal.generic.IFNULL;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.util.StringUtils;

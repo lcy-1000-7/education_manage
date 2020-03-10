@@ -140,20 +140,34 @@
         <div class="page">
             <ul class="pagination">
                 <%--向前翻页--%>
-                <li><a href="${pageContext.request.contextPath}/teacherMessageServlet?pageNum=${page.pageNum > 1?page.pageNum-1:1}&rows=5">&laquo;</a></li>
+                <c:if test="${page.pageNum == 1}">
+                <li class="disabled">
+                </c:if>
+                <c:if test="${page.pageNum != 1}">
+                <li>
+                </c:if>
+                    <a href="${pageContext.request.contextPath}/teacherMessageServlet?pageNum=${page.pageNum > 1?page.pageNum-1:1}&rows=5&tphone=${map.tphone[0]}&tname=${map.tname[0]}&temail=${map.temail[0]}">&laquo;</a>
+                </li>
 
                     <%--页码--%>
                     <c:forEach begin="1" end="${page.totalPage}" var="i">
                         <c:if test="${page.pageNum == i}">
-                            <li class="active"><a href="${pageContext.request.contextPath}/teacherMessageServlet?pageNum=${i}&rows=5">${i}</a></li>
+                            <li class="active"><a href="${pageContext.request.contextPath}/teacherMessageServlet?pageNum=${i}&rows=5&tphone=${map.tphone[0]}&tname=${map.tname[0]}&temail=${map.temail[0]}">${i}</a></li>
                         </c:if>
                         <c:if test="${page.pageNum != i}">
-                            <li><a href="${pageContext.request.contextPath}/teacherMessageServlet?pageNum=${i}&rows=5">${i}</a></li>
+                            <li><a href="${pageContext.request.contextPath}/teacherMessageServlet?pageNum=${i}&rows=5&tphone=${map.tphone[0]}&tname=${map.tname[0]}&temail=${map.temail[0]}">${i}</a></li>
                         </c:if>
                 </c:forEach>
 
                 <%--向后翻页--%>
-                <li><a href="${pageContext.request.contextPath}/teacherMessageServlet?pageNum=${page.pageNum < page.totalPage?page.pageNum+1:page.totalPage}&rows=5">&raquo;</a></li>
+                <c:if test="${page.pageNum == page.totalPage}">
+                <li class="disabled">
+                </c:if>
+                <c:if test="${page.pageNum != page.totalPage}">
+                <li>
+                </c:if>
+                    <a href="${pageContext.request.contextPath}/teacherMessageServlet?pageNum=${page.pageNum < page.totalPage?page.pageNum+1:page.totalPage}&rows=5&tphone=${map.tphone[0]}&tname=${map.tname[0]}&temail=${map.temail[0]}">&raquo;</a>
+                </li>
             </ul>
         </div>
 

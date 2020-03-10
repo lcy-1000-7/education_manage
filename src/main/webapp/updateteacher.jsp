@@ -78,53 +78,53 @@
                     <input name="tno" type="hidden" value="${teacher.tno}">
                     <div class="form-group">
                         <label for="tname">教师姓名：</label>
-                        <input type="text" class="form-control" id="tname" name="tname" value="${teacher.tname}" placeholder="请输入姓名" />
+                        <input type="text" class="form-control" id="tname" name="tname" value="${teacher.tname}" required="required" placeholder="请输入姓名" />
                     </div>
 
 
                     <div class="form-group">
                         <label>性别：</label>
                         <c:if test="${teacher.tsex == '男'}" >
-                            <input type="radio" name="tsex" value="男" checked />男
-                            <input type="radio" name="tsex" value="女"  />女
+                            <input type="radio" name="tsex" value="男" checked required="required" />男
+                            <input type="radio" name="tsex" value="女" required="required" />女
                         </c:if>
                         <c:if test="${teacher.tsex == '女'}" >
-                            <input type="radio" name="tsex" value="男"  />男
-                            <input type="radio" name="tsex" value="女" checked />女
+                            <input type="radio" name="tsex" value="男" required="required" />男
+                            <input type="radio" name="tsex" value="女" checked required="required" />女
                         </c:if>
                     </div>
 
                     <div class="form-group">
                         <label for="tbirth">出生日期：</label>
-                        <input type="date" class="form-control" id="tbirth"  name="tbirth" value="${teacher.tbirth}" placeholder="请输入出生日期" />
+                        <input type="date" class="form-control" id="tbirth"  name="tbirth" value="${teacher.tbirth}" required="required" placeholder="请输入出生日期" />
                     </div>
 
                     <div class="form-group">
                         <label for="tphone">联系方式：</label>
-                        <input type="text" class="form-control" id="tphone" name="tphone" value="${teacher.tphone}" placeholder="请输入联系方式"/>
+                        <input type="text" class="form-control" id="tphone" name="tphone" value="${teacher.tphone}" required="required" placeholder="请输入联系方式"/>
                     </div>
 
                     <div class="form-group">
                         <label for="temail">邮箱：</label>
-                        <input type="text" class="form-control" id="temail" name="temail" value="${teacher.temail}" placeholder="请输入邮箱地址"/>
+                        <input type="text" class="form-control" id="temail" name="temail" value="${teacher.temail}" required="required" placeholder="请输入邮箱地址"/>
                     </div>
 
                     <div class="form-group">
                         <label for="course">学科：</label>
-                        <input type="text" class="form-control" id="course" name="course" value="${teacher.course}" placeholder="请输入教学科目"/>
+                        <input type="text" class="form-control" id="course" name="course" value="${teacher.course}" required="required" placeholder="请输入教学科目"/>
                     </div>
 
                     <div class="form-group">
                         <label for="school">毕业院校：</label>
-                        <input type="text" class="form-control" id="school" name="school" value="${teacher.school}" placeholder="请输入年级"/>
+                        <input type="text" class="form-control" id="school" name="school" value="${teacher.school}" required="required" placeholder="请输入毕业院校"/>
                     </div>
                     <div class="form-group">
                         <label for="education">学历：</label>
-                        <input type="text" class="form-control" id="education" name="education" value="${teacher.education}" placeholder="请输入学历"/>
+                        <input type="text" class="form-control" id="education" name="education" value="${teacher.education}" required="required" placeholder="请输入学历"/>
                     </div>
                     <div class="form-group">
                         <label for="result">成果：</label>
-                        <input type="text" class="form-control" id="result" name="result" value="${teacher.result}" placeholder="请输入获得成就"/>
+                        <input type="text" class="form-control" id="result" name="result" value="${teacher.result}" required="required" placeholder="请输入获得成就"/>
                     </div>
 
                     <div class="form-group" style="text-align: center">

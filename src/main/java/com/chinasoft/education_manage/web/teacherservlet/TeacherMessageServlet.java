@@ -29,6 +29,7 @@ public class TeacherMessageServlet extends HttpServlet {
         request.setCharacterEncoding("utf-8");
         String pageNum = request.getParameter("pageNum");
         String rows = request.getParameter("rows");
+//        System.out.println(pageNum);
         Map<String, String[]> map = request.getParameterMap();
         TeacherService service = new TeacherServiceImpl();
         TeacherPage<Teacher> page = service.findGroupPage(pageNum,rows,map);
