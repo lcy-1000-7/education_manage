@@ -32,7 +32,7 @@
                     <a href="javascript:;">学员管理</a>
                     <dl class="layui-nav-child">
                         <dd><a href="${pageContext.request.contextPath}/studentMessageServlet?pageNum=1&rows=5">学员信息</a></dd>
-                        <dd><a href="${pageContext.request.contextPath}/addstudent.jsp">新增学员</a></dd>
+                        <dd><a href="${pageContext.request.contextPath}/studentServlet">新增学员</a></dd>
 
                     </dl>
                 </li>
@@ -40,7 +40,7 @@
                     <a href="javascript:;">班级管理</a>
                     <dl class="layui-nav-child">
                         <dd><a href="${pageContext.request.contextPath}/findClassServlet?currentPage=1&rows=3">班级信息</a></dd>
-                        <dd><a href="${pageContext.request.contextPath}/addClass.jsp">新增班级</a></dd>
+                        <dd><a href="${pageContext.request.contextPath}/classServlet">新增班级</a></dd>
 
                     </dl>
                 </li>
@@ -48,7 +48,7 @@
                     <a href="javascript:;">教师管理</a>
                     <dl class="layui-nav-child">
                         <dd><a href="${pageContext.request.contextPath}/teacherMessageServlet?pageNum=1&rows=5">教师信息</a></dd>
-                        <dd><a href="${pageContext.request.contextPath}/addteacher.jsp">新增教师</a></dd>
+                        <dd><a href="${pageContext.request.contextPath}/teacherServlet">新增教师</a></dd>
 
                     </dl>
                 </li>
@@ -70,7 +70,7 @@
     <div class="layui-body">
         <div class="layui-row">
             <div class="layui-col-lg7" style="margin-top: 10px;margin-left: 20px;">
-                <a href="${pageContext.request.contextPath}/addstudent.jsp" class="layui-btn">添加学员</a>
+                <a href="${pageContext.request.contextPath}/studentServlet" class="layui-btn">添加学员</a>
             </div>
 
             <div  class="layui-col-lg4" style="text-align: right" >

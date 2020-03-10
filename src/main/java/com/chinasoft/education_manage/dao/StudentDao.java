@@ -1,5 +1,6 @@
 package com.chinasoft.education_manage.dao;
 
+import com.chinasoft.education_manage.domain.Class;
 import com.chinasoft.education_manage.domain.Student;
 
 import java.util.List;
@@ -17,4 +18,6 @@ public interface StudentDao {
     void updateStudent(Student student);
 
     void deleteStudent(int sno);
+
+    List<Class> stuFindClass();
 }

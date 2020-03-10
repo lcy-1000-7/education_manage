@@ -1,4 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -24,7 +25,7 @@
                     <a href="javascript:;">学员管理</a>
                     <dl class="layui-nav-child">
                         <dd><a href="${pageContext.request.contextPath}/studentMessageServlet?pageNum=1&rows=5">学员信息</a></dd>
-                        <dd><a href="${pageContext.request.contextPath}/addstudent.jsp">新增学员</a></dd>
+                        <dd><a href="${pageContext.request.contextPath}/studentServlet">新增学员</a></dd>
 
                     </dl>
                 </li>
@@ -32,7 +33,7 @@
                     <a href="javascript:;">班级管理</a>
                     <dl class="layui-nav-child">
                         <dd><a href="${pageContext.request.contextPath}/findClassServlet?currentPage=1&rows=3">班级信息</a></dd>
-                        <dd><a href="${pageContext.request.contextPath}/addClass.jsp">新增班级</a></dd>
+                        <dd><a href="${pageContext.request.contextPath}/classServlet">新增班级</a></dd>
 
                     </dl>
                 </li>
@@ -40,7 +41,7 @@
                     <a href="javascript:;">教师管理</a>
                     <dl class="layui-nav-child">
                         <dd><a href="${pageContext.request.contextPath}/teacherMessageServlet?pageNum=1&rows=5">教师信息</a></dd>
-                        <dd><a href="${pageContext.request.contextPath}/addteacher.jsp">新增教师</a></dd>
+                        <dd><a href="${pageContext.request.contextPath}/teacherServlet">新增教师</a></dd>
 
                     </dl>
                 </li>
@@ -80,18 +81,26 @@
 
                 <div class="form-group">
                     <label for="teachername">教师姓名：</label>
-                    <input type="text" class="form-control" id="teachername" name="tname" placeholder="请输入教师姓名"/>
+                    <select id="teachername" class="form-control" name="tname">
+                        <c:forEach items="${teacherList}" var="teacher" varStatus="status">
+                            <option>${teacher.tname}</option>
+                        </c:forEach>
+                    </select>
                 </div>
 
                 <div class="form-group">
                     <label for="coursename">课程名称：</label>
-                    <input type="text" class="form-control" id="coursename" name="ccname" placeholder="请输入课程名称"/>
+                    <select id="coursename" class="form-control" name="ccname">
+                        <c:forEach items="${courseList}" var="course" varStatus="status">
+                            <option>${course.cname}</option>
+                        </c:forEach>
+                    </select>
                 </div>
 
 
                 <div class="form-group" style="text-align: center">
                     <input class="btn btn-primary" type="submit" value="提交" />
-<%--                    <input class="btn btn-default" type="reset" value="重置" />--%>
+                    <input class="btn btn-default" type="reset" value="重置" />
                     <input class="btn btn-default" type="button" onclick="javascript:history.go(-1)" value="返回"/>
                 </div>
             </form>

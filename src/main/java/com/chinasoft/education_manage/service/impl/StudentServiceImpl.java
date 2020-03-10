@@ -1,7 +1,10 @@
 package com.chinasoft.education_manage.service.impl;
 
+import com.chinasoft.education_manage.dao.ClassDao;
 import com.chinasoft.education_manage.dao.StudentDao;
+import com.chinasoft.education_manage.dao.impl.ClassDaoImpl;
 import com.chinasoft.education_manage.dao.impl.StudentDaoImpl;
+import com.chinasoft.education_manage.domain.Class;
 import com.chinasoft.education_manage.domain.Student;
 import com.chinasoft.education_manage.domain.StudentPage;
 import com.chinasoft.education_manage.service.StudentService;
@@ -45,5 +48,11 @@ public class StudentServiceImpl implements StudentService {
     @Override
     public void deleteStudent(int sno) {
         studentDao.deleteStudent(sno);
+    }
+
+    @Override
+    public List<Class> echoClass() {
+        List<Class> list = studentDao.stuFindClass();
+        return list;
     }
 }

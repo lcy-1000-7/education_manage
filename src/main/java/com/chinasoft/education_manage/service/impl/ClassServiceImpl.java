@@ -3,7 +3,9 @@ package com.chinasoft.education_manage.service.impl;
 import com.chinasoft.education_manage.dao.ClassDao;
 import com.chinasoft.education_manage.dao.impl.ClassDaoImpl;
 import com.chinasoft.education_manage.domain.Class;
+import com.chinasoft.education_manage.domain.Course;
 import com.chinasoft.education_manage.domain.Page;
+import com.chinasoft.education_manage.domain.Teacher;
 import com.chinasoft.education_manage.service.ClassService;
 
 import java.util.List;
@@ -41,5 +43,15 @@ public class ClassServiceImpl implements ClassService {
     @Override
     public void updateClass(Class aclass) {
         classDao.updateClass(aclass);
+    }
+
+    @Override
+    public List<Teacher> echoTeacher() {
+        return classDao.echoTeacher();
+    }
+
+    @Override
+    public List<Course> echoCourse() {
+        return classDao.echoCourse();
     }
 }

@@ -1,5 +1,6 @@
 package com.chinasoft.education_manage.service;
 
+import com.chinasoft.education_manage.domain.Class;
 import com.chinasoft.education_manage.domain.Teacher;
 import com.chinasoft.education_manage.domain.TeacherPage;
 
@@ -40,4 +41,6 @@ public interface TeacherService {
      * @return
      */
     TeacherPage<Teacher> findGroupPage(String pageNum, String rows, Map<String, String[]> map);
+
+    List<Class> echoClass();
 }

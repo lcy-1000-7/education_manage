@@ -2,6 +2,7 @@ package com.chinasoft.student;
 
 import com.chinasoft.education_manage.dao.StudentDao;
 import com.chinasoft.education_manage.dao.impl.StudentDaoImpl;
+import com.chinasoft.education_manage.domain.Class;
 import com.chinasoft.education_manage.domain.Student;
 import com.chinasoft.education_manage.service.StudentService;
 import com.chinasoft.education_manage.service.impl.StudentServiceImpl;
@@ -36,5 +37,13 @@ public class StudentTest {
     @Test
     public void selectAllStudent(){
 
+    }
+
+    @Test
+    public void echoClass(){
+        List<Class> classes = studentService.echoClass();
+        for (Class aClass : classes) {
+            System.out.println(aClass);
+        }
     }
 }

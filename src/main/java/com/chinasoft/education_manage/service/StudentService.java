@@ -1,7 +1,10 @@
 package com.chinasoft.education_manage.service;
 
+import com.chinasoft.education_manage.domain.Class;
 import com.chinasoft.education_manage.domain.Student;
 import com.chinasoft.education_manage.domain.StudentPage;
+
+import java.util.List;
 
 public interface StudentService {
 
@@ -14,4 +17,7 @@ public interface StudentService {
     void updateStudent(Student student);
 
     void deleteStudent(int sno);
+
+
+    List<Class> echoClass();
 }

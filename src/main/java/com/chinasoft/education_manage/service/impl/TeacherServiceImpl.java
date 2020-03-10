@@ -1,8 +1,11 @@
 package com.chinasoft.education_manage.service.impl;
 
 
+import com.chinasoft.education_manage.dao.StudentDao;
 import com.chinasoft.education_manage.dao.TeacherDao;
+import com.chinasoft.education_manage.dao.impl.StudentDaoImpl;
 import com.chinasoft.education_manage.dao.impl.TeacherDaoImpl;
+import com.chinasoft.education_manage.domain.Class;
 import com.chinasoft.education_manage.domain.Teacher;
 import com.chinasoft.education_manage.domain.TeacherPage;
 import com.chinasoft.education_manage.service.TeacherService;
@@ -87,5 +90,12 @@ public class TeacherServiceImpl implements TeacherService {
 //        new一个Page,将对应的参数传入并返回一个Page<Teacher>对象
         TeacherPage<Teacher> page = new TeacherPage<>(totalCount, totalPage, list, pageNum, rows);
         return page;
+    }
+
+    @Override
+    public List<Class> echoClass() {
+        StudentDao studentDao = new StudentDaoImpl();
+        List<Class> list = studentDao.stuFindClass();
+        return list;
     }
 }

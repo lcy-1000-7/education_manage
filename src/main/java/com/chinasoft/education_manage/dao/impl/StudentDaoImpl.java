@@ -1,6 +1,7 @@
 package com.chinasoft.education_manage.dao.impl;
 
 import com.chinasoft.education_manage.dao.StudentDao;
+import com.chinasoft.education_manage.domain.Class;
 import com.chinasoft.education_manage.domain.Student;
 import com.chinasoft.education_manage.utils.JDBCUtils;
 import org.apache.commons.lang3.StringUtils;
@@ -9,7 +10,6 @@ import org.springframework.jdbc.core.JdbcTemplate;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Set;
 
 public class StudentDaoImpl implements StudentDao {
     private JdbcTemplate jdbcTemplate = new JdbcTemplate(JDBCUtils.getDataSource());
@@ -67,7 +67,7 @@ public class StudentDaoImpl implements StudentDao {
         sb.append(" limit ?,? ");
         list.add(start);
         list.add(rows);
-        return jdbcTemplate.query(sb.toString(),new BeanPropertyRowMapper<Student>(Student.class),list.toArray());
+        return jdbcTemplate.query(sb.toString(),new BeanPropertyRowMapper<>(Student.class),list.toArray());
     }
 
     @Override
@@ -86,5 +86,11 @@ public class StudentDaoImpl implements StudentDao {
     public void deleteStudent(int sno) {
         String sql = "delete from student8 where sno = ? ";
         jdbcTemplate.update(sql,sno);
+    }
+
+    @Override
+    public List<Class> stuFindClass() {
+        String sql = "select * from banji8";
+        return jdbcTemplate.query(sql,new BeanPropertyRowMapper<>(Class.class));
     }
 }

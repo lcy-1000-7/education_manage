@@ -2,6 +2,8 @@ package com.chinasoft.education_manage.dao.impl;
 
 import com.chinasoft.education_manage.dao.ClassDao;
 import com.chinasoft.education_manage.domain.Class;
+import com.chinasoft.education_manage.domain.Course;
+import com.chinasoft.education_manage.domain.Teacher;
 import com.chinasoft.education_manage.utils.JDBCUtils;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -78,5 +80,17 @@ public class ClassDaoImpl implements ClassDao {
     public void updateClass(Class aclass) {
         String sql = "update banji8 set cname = ?, tname = ?, ccname = ? where ccid = ?";
         jdbcTemplate.update(sql, aclass.getCname(), aclass.getTname(), aclass.getCcname(), aclass.getCcid());
+    }
+
+    @Override
+    public List<Teacher> echoTeacher() {
+        String sql = "select * from teacher8";
+        return jdbcTemplate.query(sql,new BeanPropertyRowMapper<>(Teacher.class));
+    }
+
+    @Override
+    public List<Course> echoCourse() {
+        String sql = "select * from course8";
+        return jdbcTemplate.query(sql,new BeanPropertyRowMapper<>(Course.class));
     }
 }
