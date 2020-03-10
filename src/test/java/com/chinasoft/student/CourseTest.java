@@ -18,13 +18,5 @@ public class CourseTest {
         System.out.println(courseService.findCourseBycno("c001"));
     }
 
-    @Test
-    public void selectTest(){
-        CourseDao courseDao = new CourseDaoImpl();
-        List<Course> course = courseDao.findAllCourse(0, 3, "学");
-        for (Course course1 : course) {
-            System.out.println(course1);
-        }
-        System.out.println(courseDao.findTotal("小学"));
-    }
+
 }

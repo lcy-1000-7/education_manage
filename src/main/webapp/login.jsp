@@ -19,7 +19,7 @@
 <body>
 <div class="login">
     <h2>学校教务管理系统</h2>
-    <form class="layui-form" method="post" target="_blank" action="${pageContext.request.contextPath}/loginServlet">
+    <form class="layui-form" method="post" action="${pageContext.request.contextPath}/loginServlet">
         <div class="layui-form-item">
             <input type="sname" id="sname" name="sname" placeholder="请输入用户名..." required lay-verify="required"
                    class="layui-input">

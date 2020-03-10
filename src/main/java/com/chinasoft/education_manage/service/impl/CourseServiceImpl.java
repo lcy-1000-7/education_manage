@@ -7,13 +7,14 @@ import com.chinasoft.education_manage.domain.CoursePage;
 import com.chinasoft.education_manage.service.CourseService;
 
 import java.util.List;
+import java.util.Map;
 
 public class CourseServiceImpl implements CourseService {
 
     private CourseDao courseDao = new CourseDaoImpl();
 
     @Override
-    public CoursePage<Course> findCourse(int currentPage, int rows, String search) {
+    public CoursePage<Course> findCourse(int currentPage, int rows, Map<String,String[]> search) {
         int totalCount = courseDao.findTotal(search);
         int totalPage = (totalCount%rows == 0 ? (totalCount/rows):(totalCount/rows+1));
         int start = (currentPage -1)*rows;

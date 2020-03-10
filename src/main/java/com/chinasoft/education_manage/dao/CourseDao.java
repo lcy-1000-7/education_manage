@@ -4,11 +4,12 @@ import com.chinasoft.education_manage.domain.Course;
 
 
 import java.util.List;
+import java.util.Map;
 
 public interface CourseDao {
-    int findTotal(String search);
+    int findTotal(Map<String, String[]> search);
 
-    List<Course> findAllCourse(int start, int rows, String search);
+    List<Course> findAllCourse(int start, int rows, Map<String, String[]> search);
 
     void addCourse(Course aCourse);
 
