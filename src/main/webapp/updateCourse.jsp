@@ -19,7 +19,7 @@
 <body class="layui-layout-body">
 <div class="layui-layout layui-layout-admin" >
     <div class="layui-header"style="background-color: gainsboro;">
-        <div class="layui-logo" style="background-color: #000000;">首页</div>
+        <div class="layui-logo" style="background-color: #000000;"><a href="${pageContext.request.contextPath}/index.jsp">首页</a></div>
     </div>
 
     <div class="layui-side layui-bg-black">
@@ -60,8 +60,8 @@
                     </dl>
                 </li>
                 <li class="layui-nav-item"><a href="">财务管理</a></li>
-                <li class="layui-nav-item"><a href="${pageContext.request.contextPath}/findPasswordServlet?sno=${yuangong.sno}">修改密码</a></li>
-                <li class="layui-nav-item"><a href="">退出</a></li>
+                <li class="layui-nav-item"><a href="${pageContext.request.contextPath}/password.jsp">修改密码</a></li>
+                <li class="layui-nav-item"><a href="${sessionScope.remove("yuangong")}">退出</a></li>
             </ul>
         </div>
     </div>
@@ -75,29 +75,27 @@
             <form action="${pageContext.request.contextPath}/updateCourseServlet" method="post">
                 <div class="form-group">
                     <label for="cno">课程编号：</label>
-                    <input type="text" class="form-control" id="cno" name="coursenum" value="${aCourse.cno}"  placeholder="请输入课程编号" />
+                    <input type="text" class="form-control" id="cno" name="cno" readonly="readonly" value="${aCourse.cno}"  placeholder="请输入课程编号" />
                 </div>
-
-
 
                 <div class="form-group">
                     <label for="cname">课程名称：</label>
-                    <input type="text" class="form-control" id="cname"  name="coursename" value="${aCourse.cname}" placeholder="请输入课程名称" />
+                    <input type="text" class="form-control" id="cname"  name="cname" value="${aCourse.cname}" placeholder="请输入课程名称" />
                 </div>
 
                 <div class="form-group">
                     <label for="introduce">课程简介：</label>
-                    <input type="text" class="form-control" id="introduce" name="intro" value="${aCourse.introduce}" placeholder="请输入课程简介"/>
+                    <input type="text" class="form-control" id="introduce" name="introduce" value="${aCourse.introduce}" placeholder="请输入课程简介"/>
                 </div>
 
                 <div class="form-group">
                     <label for="stime">开课时间：</label>
-                    <input type="date" class="form-control" id="stime" name="start" value="${aCourse.stime}" placeholder="请输入开课时间"/>
+                    <input type="date" class="form-control" id="stime" name="stime" value="${aCourse.stime}" placeholder="请输入开课时间"/>
                 </div>
 
                 <div class="form-group">
                     <label for="etime">结课时间：</label>
-                    <input type="date" class="form-control" id="etime" name="end" placeholder="请输入就读学校"/>
+                    <input type="date" class="form-control" id="etime" name="etime" placeholder="请输入就读学校"/>
                 </div>
 
                 <div class="form-group" style="text-align: center">

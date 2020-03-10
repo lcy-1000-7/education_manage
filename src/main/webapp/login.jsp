@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="./layui/css/layui.css">
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="css/login.css"/>
+    <script src="js/jquery-2.1.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript">
         function refreshCode() {
-            var vcode = document.getElementById("vcode");
-            vcode.src = "${pageContext.request.contextPath}/vcode?time=" + new Date().getTime();
+            $("#vcode").attr("src","${pageContext.request.contextPath}/vcode?data="+new Date())
         }
     </script>
 </head>

@@ -29,16 +29,8 @@ public class YuangongDaoImpl implements YuangongDao {
     }
 
     @Override
-    public Yuangong findPasswordBysno(String sno) {
-        String sql = "select * from yuangong where sno = ?";
-        return jdbcTemplate.queryForObject(sql, new BeanPropertyRowMapper<>(Yuangong.class),sno);
+    public void updatePasswordBySname(Yuangong yuangong,String newPassword) {
+        String sql = "update yuangong set password=? where sname=? ";
+        jdbcTemplate.update(sql,newPassword,yuangong.getSname());
     }
-
-    @Override
-    public void updatePasswordById(Yuangong yuangong) {
-        String sql = "update yuangong set password=? where sno=?";
-        jdbcTemplate.update(sql, yuangong.getPassword(), yuangong.getSno());
-    }
-
-
 }

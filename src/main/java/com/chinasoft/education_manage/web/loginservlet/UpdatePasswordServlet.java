@@ -16,10 +16,17 @@ import java.io.IOException;
 public class UpdatePasswordServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding("utf-8");
-        Yuangong yuangong = CommonUtils.populate(new Yuangong(), request.getParameterMap());
-        YuangongService yuangongService = new YuangongServiceImpl();
-        yuangongService.updatePasswordById(yuangong);
-        response.sendRedirect(request.getContextPath() + "/index.jsp");
+        Yuangong yuangong = (Yuangong) request.getSession().getAttribute("yuangong");
+        String pwd1 = request.getParameter("pwd1");
+        String pwd2 = request.getParameter("pwd2");
+        if (pwd1.equals(pwd2)) {
+            YuangongService yuangongService = new YuangongServiceImpl();
+            yuangongService.updatePasswordBySname(yuangong,pwd1);
+            response.sendRedirect(request.getContextPath() + "/index.jsp");
+        }else {
+            request.setAttribute("message", "两次输入密码不一致");
+            request.getRequestDispatcher("/password.jsp").forward(request, response);
+        }
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
