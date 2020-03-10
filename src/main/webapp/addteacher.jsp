@@ -15,7 +15,15 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" >
     <link rel="stylesheet" href="./layui/css/layui.css">
     <link rel="stylesheet" href="css/style.css" />
+    <!-- 1. 导入CSS的全局样式 -->
+    <link rel="stylesheet" href="css/style.css" />
+    <%--    <link href="js/jquery-2.1.0.min.js">--%>
+    <!-- 2. jQuery导入，建议使用1.9以上的版本 -->
+    <script src="js/jquery-2.1.0.min.js"></script>
+    <!-- 3. 导入bootstrap的js文件 -->
+    <script src="js/bootstrap.min.js"></script>
 </head>
+
 <body class="layui-layout-body">
 <div class="layui-layout layui-layout-admin" >
     <div class="layui-header"style="background-color: gainsboro;">
@@ -76,46 +84,47 @@
                 <form action="" method="post">
                     <div class="form-group">
                         <label for="tname">教师姓名：</label>
-                        <input type="text" class="form-control" id="tname" name="tname"   placeholder="请输入姓名" />
+                        <input type="text" class="form-control" id="tname" name="tname" required="required" placeholder="请输入姓名" />
+                        <span id="tnameMsg"></span>
                     </div>
 
                     <div class="form-group">
                         <label>性别：</label>
-                        <input type="radio" name="tsex" value="男"  />男
-                        <input type="radio" name="tsex" value="女"  />女
+                            <input type="radio" name="tsex" value="男" required="required" />男
+                            <input type="radio" name="tsex" value="女" required="required" />女
                     </div>
 
                     <div class="form-group">
                         <label for="tbirth">出生日期：</label>
-                        <input type="date" class="form-control" id="tbirth"  name="tbirth" placeholder="请输入出生日期" />
+                        <input type="date" class="form-control" id="tbirth"  name="tbirth" required="required" placeholder="请输入出生日期" />
                     </div>
 
                     <div class="form-group">
                         <label for="tphone">联系方式：</label>
-                        <input type="text" class="form-control" id="tphone" name="tphone" placeholder="请输入联系方式"/>
+                        <input type="text" class="form-control" id="tphone" name="tphone" required="required" placeholder="请输入联系方式"/>
                     </div>
 
                     <div class="form-group">
                         <label for="temail">邮箱：</label>
-                        <input type="text" class="form-control" id="temail" name="temail" placeholder="请输入邮箱地址"/>
+                        <input type="text" class="form-control" id="temail" name="temail" required="required" placeholder="请输入邮箱地址"/>
                     </div>
 
                     <div class="form-group">
                         <label for="course">学科：</label>
-                        <input type="text" class="form-control" id="course" name="course" placeholder="请输入教学科目"/>
+                        <input type="text" class="form-control" id="course" name="course" required="required" placeholder="请输入教学科目"/>
                     </div>
 
                     <div class="form-group">
                         <label for="school">毕业院校：</label>
-                        <input type="text" class="form-control" id="school" name="school" placeholder="请输入年级"/>
+                        <input type="text" class="form-control" id="school" name="school" required="required" placeholder="请输入毕业院校"/>
                     </div>
                     <div class="form-group">
                         <label for="education">学历：</label>
-                        <input type="text" class="form-control" id="education" name="education" placeholder="请输入学历"/>
+                        <input type="text" class="form-control" id="education" name="education" required="required" placeholder="请输入学历"/>
                     </div>
                     <div class="form-group">
                         <label for="result">成果：</label>
-                        <input type="text" class="form-control" id="result" name="result" placeholder="请输入获得成就"/>
+                        <input type="text" class="form-control" id="result" name="result" required="required" placeholder="请输入获得成就"/>
                     </div>
 
                     <div class="form-group" style="text-align: center">
