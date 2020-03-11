@@ -27,7 +27,7 @@
 <body class="layui-layout-body">
 <div class="layui-layout layui-layout-admin" >
     <div class="layui-header"style="background-color: #282B33;">
-        <div class="layui-logo" style="background-color: #282B33;">首页</div>
+        <div class="layui-logo" style="background-color: #282B33;"><a href="index.jsp">首页</a></div>
         <div>
             <p class="logo">教务管理系统</p>
         </div>
