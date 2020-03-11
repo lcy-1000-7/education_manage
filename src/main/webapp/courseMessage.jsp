@@ -19,8 +19,11 @@
 </head>
 <body class="layui-layout-body">
 <div class="layui-layout layui-layout-admin" >
-    <div class="layui-header"style="background-color: gainsboro;">
-        <div class="layui-logo" style="background-color: #000000;"><a href="${pageContext.request.contextPath}/index.jsp">首页</a></div>
+    <div class="layui-header"style="background-color: #282B33;">
+        <div class="layui-logo" style="background-color: #282B33;">首页</div>
+        <div>
+            <p class="logo">教务管理系统</p>
+        </div>
     </div>
 
     <div class="layui-side layui-bg-black">
@@ -53,13 +56,12 @@
                     </dl>
                 </li>
                 <li class="layui-nav-item layui-nav-itemed" >
+                    <a href="javascript:;">课程管理</a>
                     <dl class="layui-nav-child">
                         <dd><a href="javascript:void(0)">课程信息</a></dd>
                         <dd><a href="${pageContext.request.contextPath}/addCourse.jsp">新增课程</a></dd>
-
                     </dl>
                 </li>
-                <li class="layui-nav-item"><a href="">财务管理</a></li>
                 <li class="layui-nav-item"><a href="${pageContext.request.contextPath}/password.jsp">修改密码</a></li>
                 <li class="layui-nav-item"><a href="${pageContext.request.contextPath}/loginOutServlet">退出</a></li>
             </ul>

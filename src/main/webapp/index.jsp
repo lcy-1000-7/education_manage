@@ -30,7 +30,7 @@
 
         body {
             background: #0f3854;
-            background: -webkit-radial-gradient(center ellipse, #0a2e38 0%, #000000 70%);
+            /*background: -webkit-radial-gradient(center ellipse, #0a2e38 0%, #000000 70%);*/
             background: radial-gradient(ellipse at center, #0a2e38 0%, #000000 70%);
             background-size: 100%;
         }
@@ -71,8 +71,8 @@
 
 <body class="layui-layout-body">
 <div class="layui-layout layui-layout-admin" >
-    <div class="layui-header" style="background-color: #000000">
-        <div class="layui-logo" style="background-color: #000000;"><a href="javascript:void(0)">首页</a></div>
+    <div class="layui-header"style="background-color: #282B33;">
+        <div class="layui-logo" style="background-color: #282B33;">首页</div>
     </div>
 
     <div class="layui-side layui-bg-black">

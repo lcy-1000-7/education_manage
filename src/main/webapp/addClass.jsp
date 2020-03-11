@@ -12,8 +12,11 @@
 </head>
 <body class="layui-layout-body">
 <div class="layui-layout layui-layout-admin" >
-    <div class="layui-header"style="background-color: gainsboro;">
-        <div class="layui-logo" style="background-color: #000000;"><a href="${pageContext.request.contextPath}/index.jsp">首页</a></div>
+    <div class="layui-header"style="background-color: #282B33;">
+        <div class="layui-logo" style="background-color: #282B33;">首页</div>
+        <div>
+            <p class="logo">教务管理系统</p>
+        </div>
     </div>
 
     <div class="layui-side layui-bg-black">

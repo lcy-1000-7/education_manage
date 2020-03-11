@@ -26,8 +26,11 @@
 
 <body class="layui-layout-body">
 <div class="layui-layout layui-layout-admin" >
-    <div class="layui-header"style="background-color: gainsboro;">
-        <div class="layui-logo" style="background-color: #000000;"><a href="${pageContext.request.contextPath}/index.jsp">首页</a></div>
+    <div class="layui-header"style="background-color: #282B33;">
+        <div class="layui-logo" style="background-color: #282B33;">首页</div>
+        <div>
+            <p class="logo">教务管理系统</p>
+        </div>
     </div>
 
     <div class="layui-side layui-bg-black">
@@ -102,7 +105,7 @@
                     <th>出生日期</th>
                     <th>联系方式</th>
                     <th>邮箱</th>
-                    <th>授学科目</th>
+                    <th>授学班级</th>
                     <th>毕业院校</th>
                     <th>学历</th>
                     <th>成果</th>
@@ -167,6 +170,7 @@
                 </c:if>
                     <a href="${pageContext.request.contextPath}/teacherMessageServlet?pageNum=${page.pageNum < page.totalPage?page.pageNum+1:page.totalPage}&rows=5&tphone=${map.tphone[0]}&tname=${map.tname[0]}&temail=${map.temail[0]}">&raquo;</a>
                 </li>
+                    <span style="font-size: 20px;margin-left: 10px">共${page.totalCount}条记录,共${page.totalPage}页</span>
             </ul>
         </div>
 
