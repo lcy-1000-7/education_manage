@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>学校教务管理系统</title>
     <link rel="stylesheet" href="./layui/css/layui.css">
-    <link rel="stylesheet" href="css/style.css"/>
+<%--    <link rel="stylesheet" href="css/style.css"/>--%>
     <link rel="stylesheet" href="css/login.css"/>
     <script src="js/jquery-2.1.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
