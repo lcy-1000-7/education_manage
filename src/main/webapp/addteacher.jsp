@@ -12,7 +12,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>education_manage</title>
+    <title>学校教务管理系统</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" >
     <link rel="stylesheet" href="./layui/css/layui.css">
     <link rel="stylesheet" href="css/style.css" />
@@ -68,7 +68,6 @@
 
                     </dl>
                 </li>
-                <li class="layui-nav-item"><a href="">财务管理</a></li>
                 <li class="layui-nav-item"><a href="${pageContext.request.contextPath}/password.jsp">修改密码</a></li>
                 <li class="layui-nav-item"><a href="${pageContext.request.contextPath}/loginOutServlet">退出</a></li>
             </ul>
@@ -111,7 +110,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="course">学科：</label>
+                        <label for="course">授学科目：</label>
                         <select id="course" class="form-control" name="course">
                             <c:forEach items="${list}" var="teacher" varStatus="status">
                                 <option>${teacher.cname}</option>

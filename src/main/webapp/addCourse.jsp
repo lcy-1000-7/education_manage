@@ -11,7 +11,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>新增课程</title>
+    <title>学校教务管理系统</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" >
     <link rel="stylesheet" href="./layui/css/layui.css">
     <link rel="stylesheet" href="css/style.css" />
@@ -44,7 +44,6 @@
                     </dl>
                 </li>
                 <li class="layui-nav-item layui-nav-itemed" >
-                    <a href="javascript:;">教师管理</a>
                     <dl class="layui-nav-child">
                         <dd><a href="${pageContext.request.contextPath}/teacherMessageServlet?pageNum=1&rows=5">教师信息</a></dd>
                         <dd><a href="${pageContext.request.contextPath}/teacherServlet">新增教师</a></dd>

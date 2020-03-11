@@ -12,7 +12,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>layout 后台大布局 - Layui</title>
+    <title>学校教务管理系统</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" >
     <link rel="stylesheet" href="./layui/css/layui.css">
     <link rel="stylesheet" href="css/style.css" />
@@ -60,7 +60,6 @@
 
                     </dl>
                 </li>
-                <li class="layui-nav-item"><a href="">财务管理</a></li>
                 <li class="layui-nav-item"><a href="${pageContext.request.contextPath}/password.jsp">修改密码</a></li>
                 <li class="layui-nav-item"><a href="${pageContext.request.contextPath}/loginOutServlet">退出</a></li>
             </ul>
@@ -94,7 +93,7 @@
                 <th>父母姓名</th>
                 <th>联系方式</th>
                 <th>就读学校</th>
-                <th>年级</th>
+                <th>班级名称</th>
                 <th>操作</th>
             </tr>
             </thead>

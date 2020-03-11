@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>修改密码</title>
+    <title>学校教务管理系统</title>
     <link rel="stylesheet" href="./layui/css/layui.css">
     <link rel="stylesheet" href="css/style.css"/>
 </head>
@@ -51,7 +51,6 @@
 
                     </dl>
                 </li>
-                <li class="layui-nav-item"><a href="">财务管理</a></li>
                 <li class="layui-nav-item"><a href="javascript:void(0)">修改密码</a></li>
                 <li class="layui-nav-item"><a href="${pageContext.request.contextPath}/loginOutServlet">退出</a></li>
             </ul>

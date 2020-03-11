@@ -12,7 +12,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>education_manage</title>
+    <title>学校教务管理系统</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" >
     <link rel="stylesheet" href="./layui/css/layui.css">
     <!-- 1. 导入CSS的全局样式 -->
@@ -67,7 +67,6 @@
 
                     </dl>
                 </li>
-                <li class="layui-nav-item"><a href="">财务管理</a></li>
                 <li class="layui-nav-item"><a href="${pageContext.request.contextPath}/password.jsp">修改密码</a></li>
                 <li class="layui-nav-item"><a href="${pageContext.request.contextPath}/loginOutServlet">退出</a></li>
             </ul>
@@ -103,7 +102,7 @@
                     <th>出生日期</th>
                     <th>联系方式</th>
                     <th>邮箱</th>
-                    <th>学科</th>
+                    <th>授学科目</th>
                     <th>毕业院校</th>
                     <th>学历</th>
                     <th>成果</th>
